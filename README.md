@@ -92,37 +92,23 @@
 
 ---
 
-## 🏆 GitHub Trophies  
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=algolia&no-frame=true&column=7&margin-w=10&margin-h=10&cache_seconds=5"/>
-</p>
+## GitHub Trophies
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=algolia&no-frame=true&column=7&margin-w=12&margin-h=12&cache_seconds=180)
 
----
+## GitHub Stats
+![Sachin's GitHub Stats](https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github&cache_seconds=180&include_all_commits=true)
 
-## 📊 GitHub Stats (Real-Time Commits)  
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&cache_seconds=5"/>
-</p>
+## GitHub Streak
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=sachin-iam&theme=transparent&hide_border=true&cache_seconds=180)
 
----
-
-## 🔥 GitHub Streak (Auto-Updating)  
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sachin-iam&hide_border=true&theme=transparent&background=0000000A&cache_seconds=5"/>
-</p>
+## Profile Views
+![Profile Views](https://profile-counter.glitch.me/sachin-iam/count.svg)
 
 ---
 
 ## 🌍 Top Languages (Realtime)  
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&hide_border=true&cache_seconds=5"/>
-</p>
-
----
-
-## 👀 Profile Views (Live Counter)  
-<p align="center">
-  <img src="https://profile-counter.glitch.me/sachin-iam/count.svg" height="50"/>
 </p>
 
 ---
