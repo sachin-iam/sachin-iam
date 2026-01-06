@@ -1,7 +1,7 @@
 # 👋 Sachin Gupta  
 ### **Software Developer | Web · AI · SaaS · Cloud**
 
-Building scalable full-stack SaaS and AI-integrated web applications.
+Building scalable full-stack SaaS and AI-powered web applications.
 
 ---
 
@@ -53,14 +53,13 @@ Building scalable full-stack SaaS and AI-integrated web applications.
     <td align="center"><img src="https://skillicons.dev/icons?i=react" height="40"/><br/>React</td>
     <td align="center"><img src="https://skillicons.dev/icons?i=nextjs" height="40"/><br/>Next.js</td>
     <td align="center"><img src="https://skillicons.dev/icons?i=nodejs" height="40"/><br/>Node.js</td>
-    <td align="center"><img src="https://skillicons.dev/icons?i=express" height="40"/><br/>Express.js</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=express" height="40"/><br/>Express</td>
     <td align="center"><img src="https://skillicons.dev/icons?i=nestjs" height="40"/><br/>NestJS</td>
     <td align="center"><img src="https://skillicons.dev/icons?i=laravel" height="40"/><br/>Laravel</td>
     <td align="center"><img src="https://skillicons.dev/icons?i=tailwind" height="40"/><br/>TailwindCSS</td>
     <td align="center"><img src="https://skillicons.dev/icons?i=docker" height="40"/><br/>Docker</td>
     <td align="center"><img src="https://skillicons.dev/icons?i=aws" height="40"/><br/>AWS</td>
     <td align="center"><img src="https://skillicons.dev/icons?i=gcp" height="40"/><br/>GCP</td>
-    <td align="center"><img src="https://skillicons.dev/icons?i=vercel" height="40"/><br/>Vercel</td>
   </tr>
 </table>
 </div>
@@ -126,8 +125,8 @@ Building scalable full-stack SaaS and AI-integrated web applications.
 ## 🚀 Featured Projects  
 
 ### 💻 **RoboBooks**  
-A SaaS-based Accounting & Finance platform for bookkeeping and expense tracking.  
-**Tech:** React · Next.js · Node.js · MongoDB · Express.js · PostgreSQL  
+A SaaS-based accounting and finance platform for bookkeeping and expense tracking.  
+**Tech:** React · Next.js · Node.js · MongoDB · Express · PostgreSQL  
 
 ### 📁 **Sortify**  
 A smart File & Task Organizer to categorize and manage data efficiently.  
@@ -135,9 +134,8 @@ A smart File & Task Organizer to categorize and manage data efficiently.
 
 ### 🥐 **Bake Ree**  
 A bakery-focused E-Commerce ordering and product management platform.  
-**Tech:** React · Next.js · Node.js · Express.js · MongoDB  
+**Tech:** React · Next.js · Node.js · Express · MongoDB  
 
 ---
 
-### ✨  
-<p align="center"><b>Thanks for visiting my profile! Keep building. 🚀</b></p>
+<p align="center"><b>Thanks for visiting my profile — Keep Building 🚀</b></p>
