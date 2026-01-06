@@ -7,7 +7,7 @@
 
 ## 👨‍💻 About Me  
 Building scalable full-stack web and SaaS applications with AI integrations.  
-Passionate about clean UI, REST APIs, databases, and cloud deployment.
+Focused on clean UI, REST APIs, databases, and cloud deployment.
 
 ---
 
@@ -23,17 +23,13 @@ Passionate about clean UI, REST APIs, databases, and cloud deployment.
 
 <img src="https://skillicons.dev/icons?i=ts,js,python,java,c,go,rust,php" height="45"/>
 
-<br/>
-
 **TypeScript · JavaScript · Python · Java · C · Go · Rust · PHP**
 
 ---
 
 ## ⚙️ Frameworks & Development  
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,nestjs,laravel,tailwind" height="45"/>
-
-<br/>
+<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,nestjs,laravel,tailwind,tailwindcss" height="45"/>
 
 **React · Next.js · Node.js · Express.js · NestJS · Laravel · TailwindCSS**
 
@@ -41,10 +37,7 @@ Passionate about clean UI, REST APIs, databases, and cloud deployment.
 
 ## 🗄️ Databases & Backend Services  
 
-<img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres,firebase" height="45"/>  
-<img src="https://skillicons.dev/icons?i=postgres" height="45"/>
-
-<br/>
+<img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres,firebase" height="45"/>
 
 **MongoDB · MySQL · PostgreSQL · Firebase**
 
@@ -54,39 +47,37 @@ Passionate about clean UI, REST APIs, databases, and cloud deployment.
 
 <img src="https://skillicons.dev/icons?i=git,postman,arduino,raspberrypi,eslint,prettier" height="45"/>
 
-<br/>
-
 **Git · Postman · Arduino · Raspberry Pi · ESLint · Prettier**
 
 ---
 
 ## 🏆 GitHub Trophies  
 
-<img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=algolia&no-frame=true&column=7&margin-w=12&margin-h=12" height="160"/>
+![](https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=algolia&no-frame=true&no-bg=true&margin-w=15&margin-h=15&cache_seconds=60)
 
 ---
 
-## 📊 GitHub Stats (Real-Time)
+## 📊 GitHub Stats *(Auto Updating)*  
 
-<img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent" height="170"/>
-
----
-
-## 🔥 GitHub Streak (Live)
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=sachin-iam&theme=transparent&hide_border=true" height="170"/>
+![](https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent&cache_seconds=60)
 
 ---
 
-## 👀 Visitor Count (Excludes Self-Visits)
+## 🔥 GitHub Streak *(Live Counter)*  
 
-<img src="https://profile-counter.glitch.me/sachin-iam/count.svg" height="45"/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=sachin-iam&theme=transparent&hide_border=true&cache_seconds=60)
 
 ---
 
-## 🌍 Most Used Languages (Auto Updating)
+## 👀 Visitor Count *(Excludes Self-Visits Automatically)*  
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&hide_border=true&theme=transparent" height="150"/>
+![](https://profile-counter.glitch.me/sachin-iam/count.svg)
+
+---
+
+## 🌍 Top Languages *(Real-Time from GitHub)*  
+
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&hide_border=true&theme=transparent&cache_seconds=60)
 
 ---
 
@@ -99,7 +90,7 @@ A SaaS-based Accounting & Finance platform for smart bookkeeping and expense tra
 ---
 
 ### 📁 **Sortify**  
-A smart File & Task organizer for efficient categorization and workflow management.  
+A smart File & Task organizer for efficient categorization and workflow automation.  
 **Tech:** React · TypeScript · Node.js · MongoDB  
 
 ---
@@ -107,11 +98,6 @@ A smart File & Task organizer for efficient categorization and workflow manageme
 ### 🥐 **Bake Ree**  
 Bakery-focused E-Commerce ordering and product management system.  
 **Tech:** React · Next.js · Node.js · Express.js · MongoDB  
-
----
-
-### ⚡ GitHub Traffic Note  
-> This counter does **not track your own profile views**, only external visits.
 
 ---
 
