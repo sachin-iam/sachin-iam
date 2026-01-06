@@ -49,9 +49,16 @@ Focused on clean UI, REST APIs, databases, and cloud deployment.
 
 ## 🛠️ Tools & Utilities  
 
-<img src="https://skillicons.dev/icons?i=git,postman,arduino,raspberrypi,eslint,prettier" height="45"/>
+<img src="https://skillicons.dev/icons?i=git,postman,arduino,raspberrypi" height="45"/>
+<br/>
+<img src="https://raw.githubusercontent.com/github/explore/main/topics/eslint/eslint.png" height="45"/>
+&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-icon-dark.svg" height="45"/>
+
+<br/>
 
 **Git · Postman · Arduino · Raspberry Pi · ESLint · Prettier**
+
 
 ---
 
