@@ -4,7 +4,7 @@
 ---
 
 ## 👨‍💻 About Me  
-Building scalable SaaS and AI-powered full-stack applications.  
+Building scalable full-stack SaaS applications and AI-powered web platforms.
 
 ---
 
@@ -93,40 +93,46 @@ Building scalable SaaS and AI-powered full-stack applications.
 
 ## 🏆 GitHub Trophies  
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=algolia&no-frame=true&margin-w=12&margin-h=12"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=algolia&no-frame=true&column=6&margin-w=12&margin-h=12"/>
 </p>
 
 ---
 
 ## 📊 GitHub Stats  
-
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=transparent&bg_color=0000000A&hide_border=true&count_private=true"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=transparent&bg_color=00000008&hide_border=true&count_private=true&include_all_commits=true"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=sachin-iam&theme=transparent&background=0000000A&hide_border=true"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sachin-iam&theme=transparent&background=00000008&hide_border=true"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&theme=transparent&bg_color=00000008&hide_border=true"/>
 </p>
 
 ---
 
 ## 👀 Profile Views  
 <p align="center">
-  <img src="https://profile-counter.glitch.me/sachin-iam/count.svg" height="45"/>
+  <img src="https://profile-counter.glitch.me/sachin-iam/count.svg"/>
 </p>
 
 ---
 
 ## 🚀 Featured Projects  
 
-### **RoboBooks**  
-A SaaS-based accounting and finance platform for bookkeeping and expense tracking.  
+### 💻 **RoboBooks**  
+A SaaS-based Accounting & Finance platform for bookkeeping and expense tracking.  
+**Tech:** React · Next.js · Node.js · MongoDB · Express · PostgreSQL  
 
-### **Sortify**  
-A smart File & Task Organizer to categorize and manage data efficiently.  
+### 📁 **Sortify**  
+A smart file & task organization tool for efficient data categorization.  
+**Tech:** React · TypeScript · Node.js · MongoDB  
 
-### **Bake Ree**  
+### 🥐 **Bake Ree**  
 A bakery-focused E-Commerce ordering and product management platform.  
+**Tech:** React · Next.js · Node.js · Express · MongoDB  
 
 ---
 
