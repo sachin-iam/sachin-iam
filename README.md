@@ -82,9 +82,10 @@ Focused on clean UI, REST APIs, databases, and cloud deployment.
 
 ---
 
-## 👀 Visitor Count *(Excludes Self-Visits Automatically)*  
-
-![](https://profile-counter.glitch.me/sachin-iam/count.svg)
+## 👀 Visitor Count
+<p align="center">
+  <img src="https://profile-counter.glitch.me/sachin-iam/count.svg" />
+</p>
 
 ---
 
