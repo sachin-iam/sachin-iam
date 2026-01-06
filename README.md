@@ -1,10 +1,15 @@
 # 👋 Sachin Gupta  
 ### **Software Developer | Web · AI · SaaS · Cloud**
 
+Building scalable full-stack SaaS and AI-integrated web applications.
+
 ---
 
 ## 👨‍💻 About Me  
-Building scalable full-stack SaaS applications and AI-powered web platforms.
+- 🚀 Full-Stack Web Apps using **React, Next.js, Node.js, Express, MongoDB, PostgreSQL**  
+- ☁️ Exploring **Cloud, DevOps & Microservices**  
+- 🧠 Learning **AI/ML & NLP SaaS Integrations**  
+- 🤝 Turning ideas into scalable real-world products  
 
 ---
 
@@ -27,14 +32,14 @@ Building scalable full-stack SaaS applications and AI-powered web platforms.
 <p align="center">
 <table align="center">
 <tr>
-<td align="center"><img src="https://skillicons.dev/icons?i=ts" height="40"><br>TypeScript</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=js" height="40"><br>JavaScript</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=python" height="40"><br>Python</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=java" height="40"><br>Java</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=c" height="40"><br>C</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=go" height="40"><br>Go</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=rust" height="40"><br>Rust</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=php" height="40"><br>PHP</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=ts" height="40"/><br/>TypeScript</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=js" height="40"/><br/>JavaScript</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=python" height="40"/><br/>Python</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=java" height="40"/><br/>Java</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=c" height="40"/><br/>C</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=go" height="40"/><br/>Go</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=rust" height="40"/><br/>Rust</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=php" height="40"/><br/>PHP</td>
 </tr>
 </table>
 </p>
@@ -45,16 +50,16 @@ Building scalable full-stack SaaS applications and AI-powered web platforms.
 <p align="center">
 <table align="center">
 <tr>
-<td align="center"><img src="https://skillicons.dev/icons?i=laravel" height="40"><br>Laravel</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=react" height="40"><br>React</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=nextjs" height="40"><br>Next.js</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=nodejs" height="40"><br>Node.js</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=express" height="40"><br>Express</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=nestjs" height="40"><br>NestJS</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=tailwind" height="40"><br>TailwindCSS</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=docker" height="40"><br>Docker</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=aws" height="40"><br>AWS</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=gcp" height="40"><br>GCP</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=laravel" height="40"/><br/>Laravel</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=react" height="40"/><br/>React</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=nextjs" height="40"/><br/>Next.js</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=nodejs" height="40"/><br/>Node.js</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=express" height="40"/><br/>Express</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=nestjs" height="40"/><br/>NestJS</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=tailwind" height="40"/><br/>TailwindCSS</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=docker" height="40"/><br/>Docker</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=aws" height="40"/><br/>AWS</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=gcp" height="40"/><br/>GCP</td>
 </tr>
 </table>
 </p>
@@ -65,10 +70,10 @@ Building scalable full-stack SaaS applications and AI-powered web platforms.
 <p align="center">
 <table align="center">
 <tr>
-<td align="center"><img src="https://skillicons.dev/icons?i=mongodb" height="40"><br>MongoDB</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=mysql" height="40"><br>MySQL</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=postgres" height="40"><br>PostgreSQL</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=firebase" height="40"><br>Firebase</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=mongodb" height="40"/><br/>MongoDB</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=mysql" height="40"/><br/>MySQL</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=postgres" height="40"/><br/>PostgreSQL</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=firebase" height="40"/><br/>Firebase</td>
 </tr>
 </table>
 </p>
@@ -79,12 +84,12 @@ Building scalable full-stack SaaS applications and AI-powered web platforms.
 <p align="center">
 <table align="center">
 <tr>
-<td align="center"><img src="https://skillicons.dev/icons?i=git" height="40"><br>Git</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=postman" height="40"><br>Postman</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=arduino" height="40"><br>Arduino</td>
-<td align="center"><img src="https://skillicons.dev/icons?i=raspberrypi" height="40"><br>Raspberry Pi</td>
-<td align="center"><img src="https://raw.githubusercontent.com/github/explore/main/topics/eslint/eslint.png" height="40"><br>ESLint</td>
-<td align="center"><img src="https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-icon-dark.svg" height="40"><br>Prettier</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=git" height="40"/><br/>Git</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=postman" height="40"/><br/>Postman</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=arduino" height="40"/><br/>Arduino</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=raspberrypi" height="40"/><br/>Raspberry Pi</td>
+<td align="center"><img src="https://raw.githubusercontent.com/github/explore/main/topics/eslint/eslint.png" height="40"/><br/>ESLint</td>
+<td align="center"><img src="https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-icon-dark.svg" height="40"/><br/>Prettier</td>
 </tr>
 </table>
 </p>
@@ -99,6 +104,7 @@ Building scalable full-stack SaaS applications and AI-powered web platforms.
 ---
 
 ## 📊 GitHub Stats  
+
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=transparent&bg_color=00000008&hide_border=true&count_private=true&include_all_commits=true"/>
 </p>
@@ -115,7 +121,7 @@ Building scalable full-stack SaaS applications and AI-powered web platforms.
 
 ## 👀 Profile Views  
 <p align="center">
-  <img src="https://profile-counter.glitch.me/sachin-iam/count.svg"/>
+  <img src="https://profile-counter.glitch.me/sachin-iam/count.svg" height="45"/>
 </p>
 
 ---
@@ -123,16 +129,13 @@ Building scalable full-stack SaaS applications and AI-powered web platforms.
 ## 🚀 Featured Projects  
 
 ### 💻 **RoboBooks**  
-A SaaS-based Accounting & Finance platform for bookkeeping and expense tracking.  
-**Tech:** React · Next.js · Node.js · MongoDB · Express · PostgreSQL  
+A SaaS-based accounting and finance platform for bookkeeping and expense tracking.  
 
 ### 📁 **Sortify**  
-A smart file & task organization tool for efficient data categorization.  
-**Tech:** React · TypeScript · Node.js · MongoDB  
+A smart File & Task Organizer to categorize and manage data efficiently.  
 
 ### 🥐 **Bake Ree**  
 A bakery-focused E-Commerce ordering and product management platform.  
-**Tech:** React · Next.js · Node.js · Express · MongoDB  
 
 ---
 
