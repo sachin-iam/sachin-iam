@@ -92,24 +92,24 @@
 
 ---
 
-## 🏆 GitHub Trophies
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=algolia&no-frame=true&column=7&margin-w=10&margin-h=10"/>
-</p>
-
 ## 📊 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent&cache_seconds=120" />
 </p>
 
 ## 🔥 GitHub Streak
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sachin-iam&theme=transparent&hide_border=true"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sachin-iam&theme=transparent&hide_border=true&cache_seconds=120" />
 </p>
 
-## 👀 Profile Views
+## 🏆 GitHub Trophies
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=sachin-iam&style=for-the-badge"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=algolia&no-frame=true&column=7&margin-w=10&margin-h=10&cache_seconds=120" />
+</p>
+
+## 🌍 Visitors
+<p align="center">
+  <img src="https://profile-counter.glitch.me/sachin-iam/count.svg" />
 </p>
 
 ## 🌍 Top Languages
