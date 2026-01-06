@@ -120,14 +120,14 @@
 
 ---
 
-## 👀 Visitor Count  
+## 🌍 Visitor Count  
 <p align="center">
   <img src="https://profile-counter.glitch.me/sachin-iam/count.svg"/>
 </p>
 
 ---
 
-## 🌍 Top Languages  
+## 🌐 Top Languages  
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&hide_border=true&theme=transparent"/>
 </p>
