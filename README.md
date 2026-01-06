@@ -89,9 +89,10 @@ Focused on clean UI, REST APIs, databases, and cloud deployment.
 
 ---
 
-## 🌍 Top Languages *(Real-Time from GitHub)*  
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&hide_border=true&theme=transparent&cache_seconds=60)
+## 🌍 Top Languages (Real-Time)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&hide_border=true&theme=transparent&cache_seconds=60" />
+</p>
 
 ---
 
