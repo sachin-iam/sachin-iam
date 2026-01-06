@@ -1,15 +1,17 @@
-# Sachin Gupta  
+# 👋 Sachin Gupta  
 
-**Software Developer | Focused on Web Development, AI & SaaS Applications**  
+### **Software Developer | Web · AI · SaaS · Cloud**
+
+Building scalable full-stack SaaS and AI-integrated web applications with modern technologies.
 
 ---
 
 ## 👨‍💻 About Me  
-- 🚀 Building full-stack web applications using **React, Next.js, Node.js, MongoDB, Express.js**  
-- 💡 Experienced in designing, developing, and debugging responsive web apps  
-- ☁️ Exploring **cloud technologies, DevOps, and microservices**  
-- 🧠 Learning **AI/ML applications** and modern SaaS integrations  
-- 🤝 Passionate about **turning ideas into scalable real-world projects**  
+- 🚀 Full-Stack Development using **React, Next.js, Node.js, Express, MongoDB, PostgreSQL**  
+- ☁️ Exploring **Cloud, DevOps & Microservices**  
+- 🧠 Learning **AI/ML & NLP integrations**  
+- 🛠️ Crafting scalable **SaaS & Web Platforms**  
+- 🤝 Turning ideas into real-world products  
 
 ---
 
@@ -28,76 +30,63 @@
 
 ---
 
-## 💻 Tech Stack  
-
+## 💻 Languages  
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,python,java,c,go,rust" height="35" />
+  <img src="https://skillicons.dev/icons?i=ts,js,python,java,c,go,rust,php" height="35" />
   <br/>
-  <sub><b>TypeScript · JavaScript · Python · Java · C · Go · Rust</b></sub>
-</div>  
+  <sub><b>TypeScript · JavaScript · Python · Java · C · Go · Rust · PHP</b></sub>
+</div>
 
 ---
 
+## ⚙️ Frameworks & Development  
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,html,css,tailwind" height="35" />
+  <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,nestjs,laravel,tailwind,docker,aws,gcp,vercel,netlify,githubactions" height="35" />
   <br/>
-  <sub><b>React · Next.js · HTML5 · CSS3 · TailwindCSS</b></sub>
-</div>  
+  <sub><b>React · Next.js · Node.js · Express.js · NestJS · Laravel · TailwindCSS · Docker · AWS · GCP · Vercel · Netlify · GitHub Actions</b></sub>
+</div>
 
 ---
 
+## 🗄️ Databases & Backend Services  
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs" height="35" />
-  <img src="https://cdn.worldvectorlogo.com/logos/socket-io-1.svg" height="35" style="margin-left:8px;" />
+  <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres,firebase" height="35" />
   <br/>
-  <sub><b>Node.js · Express.js · NestJS · Socket.io</b></sub>
-</div>  
+  <sub><b>MongoDB · MySQL · PostgreSQL · Firebase</b></sub>
+</div>
 
 ---
 
+## 🛠️ Tools & Utilities  
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=mongodb,mysql,firebase" height="35" />
-  <br/>
-  <sub><b>MongoDB · MySQL · Firebase</b></sub>
-</div>  
-
----
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=aws,gcp,docker,vercel,netlify,githubactions" height="35" />
-  <br/>
-  <sub><b>AWS · Google Cloud · Docker · Vercel · Netlify · GitHub Actions</b></sub>
-</div>  
-
----
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=git,postman,arduino,raspberrypi,eslint,prettier" height="35" />
+  <img src="https://skillicons.dev/icons?i=git,postman,arduino,raspberrypi" height="35" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg" height="35" style="margin-left:6px;" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prettier/prettier-original.svg" height="35" style="margin-left:6px;" />
   <br/>
   <sub><b>Git · Postman · Arduino · Raspberry Pi · ESLint · Prettier</b></sub>
-</div>  
+</div>
 
 ---
 
 ## 📊 GitHub Stats  
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=transparent&bg_color=00000015&hide_border=true&count_private=true" height="165" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sachin-iam&theme=transparent&background=00000015&hide_border=true" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=transparent&bg_color=00000010&hide_border=true&count_private=true" height="165" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sachin-iam&theme=transparent&background=00000010&hide_border=true" height="165" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&theme=transparent&bg_color=00000015&hide_border=true" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&theme=transparent&bg_color=00000010&hide_border=true" height="165" />
 </p>
 
 ---
 
 ## 🏆 Highlights  
-- 📌 **279+ GitHub contributions** this year  
-- ⭐ Collaborated on **RoboBooks**, a SaaS-based accounting platform  
-- 🏅 Contributor to **Sortify** and **Bake Ree**  
-- ⚡ Strong foundation in **Web Development, REST APIs, and Databases**  
-- 📜 Certified in **AI Fundamentals, IoT, Cloud Essentials, and Industrial Communication Protocols**  
+- 🔥 **279+ GitHub Contributions this year**  
+- ⭐ Collaborated on **RoboBooks (Accounting SaaS Platform)**  
+- 🏅 Contributor to **Sortify & Bake Ree**  
+- ⚡ Strong foundation in **REST APIs, Databases & Web SaaS**  
+- 📜 Certified in **AI Fundamentals, IoT, Cloud & Protocols**
 
 ---
 
@@ -108,30 +97,36 @@
 
 ---
 
-## 🚀 Featured Projects Showcase  
+## 🚀 Featured Projects  
 
 ### 💻 RoboBooks  
-A SaaS-based **accounting and finance management platform** designed to simplify bookkeeping and expense tracking.  
-**Tech:** React · Next.js · Node.js · MongoDB · Express.js  
+A SaaS-based **Accounting & Finance Platform** for bookkeeping and expense tracking.  
+**Tech:** React · Next.js · Node.js · MongoDB · Express.js · PostgreSQL  
 
 ---
 
-### 💻 Sortify  
-A **file and task organization tool** that helps manage, categorize, and sort data efficiently.  
+### 📁 Sortify  
+A smart **File & Task Organizer** to categorize and manage data efficiently.  
 **Tech:** React · TypeScript · Node.js · MongoDB  
 
 ---
 
-### 🍞 Bake Ree  
-An **e-commerce platform** focused on bakery product management and online ordering.  
+### 🥐 Bake Ree  
+A bakery-focused **E-Commerce Ordering Platform**  
 **Tech:** React · Next.js · Node.js · Express.js · MongoDB  
 
 ---
 
-## 📈 Visitors  
+## 👀 Profile Views  
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=sachin-iam&label=Profile%20Views&color=0e75b6&style=for-the-badge" />
+  <img src="https://profile-counter.glitch.me/sachin-iam/count.svg" />
 </p>
 
 ---
-<!-- End of README -->
+
+> ⚠️ Note: This counter does **not support self-view filtering**, but it reliably tracks all visits.  
+> GitHub does not provide API to exclude self profile views from counters like Komarev.
+
+---
+
+**Thanks for visiting! 🚀**
