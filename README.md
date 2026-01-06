@@ -1,11 +1,13 @@
+<div align="center">
+
 # 👋 Sachin Gupta  
-### Software Developer | Web • AI • SaaS  
+### **Software Developer | Web Development • AI • SaaS**
 
 ---
 
 ## 👨‍💻 About Me  
-Building scalable full-stack applications with modern web and AI integrations.  
-Experienced in responsive UI, REST APIs, databases, cloud deployment, and SaaS product development.
+Building scalable full-stack web and SaaS applications with AI integrations.  
+Passionate about clean UI, REST APIs, databases, and cloud deployment.
 
 ---
 
@@ -19,64 +21,72 @@ Experienced in responsive UI, REST APIs, databases, cloud deployment, and SaaS p
 
 ## 💻 Languages  
 
-![](https://skillicons.dev/icons?i=ts,js,python,java,c,go,rust,php)
+<img src="https://skillicons.dev/icons?i=ts,js,python,java,c,go,rust,php" height="45"/>
 
-### TypeScript · JavaScript · Python · Java · C · Go · Rust · PHP
+<br/>
+
+**TypeScript · JavaScript · Python · Java · C · Go · Rust · PHP**
 
 ---
 
 ## ⚙️ Frameworks & Development  
 
-![](https://skillicons.dev/icons?i=react,nextjs,nodejs,express,nestjs,laravel,tailwind)
+<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,nestjs,laravel,tailwind" height="45"/>
 
-### React · Next.js · Node.js · Express.js · NestJS · Laravel · TailwindCSS
+<br/>
+
+**React · Next.js · Node.js · Express.js · NestJS · Laravel · TailwindCSS**
 
 ---
 
 ## 🗄️ Databases & Backend Services  
 
-![](https://skillicons.dev/icons?i=mongodb,mysql,postgres,firebase)
+<img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres,firebase" height="45"/>  
+<img src="https://skillicons.dev/icons?i=postgres" height="45"/>
 
-### MongoDB · MySQL · PostgreSQL · Firebase
+<br/>
+
+**MongoDB · MySQL · PostgreSQL · Firebase**
 
 ---
 
 ## 🛠️ Tools & Utilities  
 
-![](https://skillicons.dev/icons?i=git,postman,arduino,raspberrypi,eslint)  
-<img src="https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-icon-dark.svg" height="40"/>
+<img src="https://skillicons.dev/icons?i=git,postman,arduino,raspberrypi,eslint,prettier" height="45"/>
 
-### Git · Postman · Arduino · Raspberry Pi · ESLint · Prettier
+<br/>
 
----
-
-## 📊 GitHub Stats  
-
-![](https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&theme=transparent)
-
----
-
-## 🔥 GitHub Streak  
-
-![](https://github-readme-streak-stats.herokuapp.com/?user=sachin-iam&theme=transparent&hide_border=true)
+**Git · Postman · Arduino · Raspberry Pi · ESLint · Prettier**
 
 ---
 
 ## 🏆 GitHub Trophies  
 
-![](https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=algolia&no-frame=true&no-bg=true&margin-w=8)
+<img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=algolia&no-frame=true&column=7&margin-w=12&margin-h=12" height="160"/>
 
 ---
 
-## 👀 Visitor Count  
+## 📊 GitHub Stats (Real-Time)
 
-![](https://profile-counter.glitch.me/sachin-iam/count.svg)
+<img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent" height="170"/>
 
 ---
 
-## 🌍 Top Languages  
+## 🔥 GitHub Streak (Live)
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&hide_border=true&theme=transparent)
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=sachin-iam&theme=transparent&hide_border=true" height="170"/>
+
+---
+
+## 👀 Visitor Count (Excludes Self-Visits)
+
+<img src="https://profile-counter.glitch.me/sachin-iam/count.svg" height="45"/>
+
+---
+
+## 🌍 Most Used Languages (Auto Updating)
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&hide_border=true&theme=transparent" height="150"/>
 
 ---
 
@@ -100,4 +110,11 @@ Bakery-focused E-Commerce ordering and product management system.
 
 ---
 
-<p align="center"><b>Building scalable ideas into real SaaS products 🚀</b></p>
+### ⚡ GitHub Traffic Note  
+> This counter does **not track your own profile views**, only external visits.
+
+---
+
+**Keep innovating and building scalable products 🚀**
+
+</div>
