@@ -64,7 +64,9 @@ Focused on clean UI, REST APIs, databases, and cloud deployment.
 
 ## 🏆 GitHub Trophies
 
-[![Trophies](https://github-profile-trophy-git-main.vercel.app/?username=sachin-iam)](https://github.com/ryo-ma/github-profile-trophy)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=transparent&hide_border=true&rank_icon=github" />
+</p>
 
 ---
 
