@@ -83,8 +83,11 @@ Focused on clean UI, REST APIs, databases, and cloud deployment.
 ---
 
 ## 👀 Visitor Count
+
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=sachin-iam&label=Profile%20Views&color=blueviolet&style=for-the-badge" />
+  <img 
+    src="https://komarev.com/ghpvc/?username=sachin-iam&label=Profile%20Views&color=7a18f5&style=for-the-badge"
+  />
 </p>
 
 ---
