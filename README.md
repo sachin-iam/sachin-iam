@@ -68,6 +68,12 @@ Focused on clean UI, REST APIs, databases, and cloud deployment.
 
 ---
 
+## 📊 Contribution Graph
+
+![Graph](https://github-readme-activity-graph.vercel.app/graph?username=sachin-iam&theme=github-compact)
+
+---
+
 ## 📊 GitHub Stats
 
 <p align="center">
