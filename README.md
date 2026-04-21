@@ -69,8 +69,9 @@ Focused on clean UI, REST APIs, databases, and cloud deployment.
 ---
 
 ## 📊 GitHub Stats
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&hide_border=true&theme=transparent" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent&cache_seconds=0" />
 </p>
 
 ---
