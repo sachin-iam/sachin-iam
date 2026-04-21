@@ -62,14 +62,16 @@ Focused on clean UI, REST APIs, databases, and cloud deployment.
 
 ---
 
-## 🏆 Achievements
+## 🏆 GitHub Trophies
 
-![Stats](https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=transparent)
+![Trophies](https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=algolia&no-frame=true&margin-w=10)
+
 ---
 
 ## 📊 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent&cache_seconds=60" />
+  <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&hide_border=true&theme=transparent" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sachin-iam&theme=transparent&hide_border=true" width="48%" />
 </p>
 
 ---
