@@ -64,7 +64,7 @@ Focused on clean UI, REST APIs, databases, and cloud deployment.
 
 ## 🏆 GitHub Trophies
 
-![Trophies](https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=algolia&no-frame=true&margin-w=10)
+![Trophies](https://github-profile-trophy-git-main.vercel.app/?username=sachin-iam&theme=algolia&no-frame=true&margin-w=10)
 
 ---
 
