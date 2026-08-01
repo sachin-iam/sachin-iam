@@ -1,330 +1,256 @@
 <!-- ===================================================== -->
-<!--                  PREMIUM HERO SECTION                 -->
+<!--                  HERO SECTION                          -->
 <!-- ===================================================== -->
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=300&color=0:0F172A,20:1E293B,45:312E81,70:2563EB,100:06B6D4&text=Sachin%20Gupta&fontSize=58&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=Software%20Developer%20%E2%80%A2%20AI%20Engineer%20%E2%80%A2%20SaaS%20Builder&descAlignY=58&descSize=22"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=300&color=0:0F172A,20:1E293B,45:312E81,70:2563EB,100:06B6D4&text=Sachin%20Gupta&fontSize=58&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=Software%20Developer%20%E2%80%A2%20Web%20Dev%20%E2%80%A2%20AI%20%E2%80%A2%20SaaS&descAlignY=58&descSize=20" />
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=SF+Pro+Display&weight=600&size=28&duration=3200&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&lines=Building+Beautiful+Software.;Full+Stack+Developer.;AI+Powered+Applications.;Modern+SaaS+Architectures.;Always+Learning.+Always+Building."/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3200&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&lines=Building+scalable+full-stack+SaaS+applications;React+%C2%B7+Next.js+%C2%B7+Node.js+%C2%B7+AI+integrations;Clean+UI+%C2%B7+REST+APIs+%C2%B7+Cloud+deployment" />
 
 <br><br>
 
 <p>
-
 <a href="https://www.linkedin.com/in/sachin-gupta-6252652a5/">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-
 &nbsp;
-
 <a href="mailto:sachinguptaiam@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
-
 &nbsp;
-
 <a href="https://github.com/sachin-iam">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
-
 </p>
 
 <br>
 
-<img src="https://komarev.com/ghpvc/?username=sachin-iam&style=for-the-badge&color=0e75b6"/>
-
-<img src="https://img.shields.io/github/followers/sachin-iam?style=for-the-badge"/>
-
-<img src="https://img.shields.io/github/stars/sachin-iam?affiliations=OWNER&style=for-the-badge"/>
+<img src="https://komarev.com/ghpvc/?username=sachin-iam&style=for-the-badge&color=2563EB" />
+<img src="https://img.shields.io/github/followers/sachin-iam?style=for-the-badge&color=2563EB" />
+<img src="https://img.shields.io/github/stars/sachin-iam?affiliations=OWNER&style=for-the-badge&color=06B6D4" />
 
 </div>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0F172A,50:2563EB,100:06B6D4&height=2" />
 
-# 🍎 About Me
+<!-- ===================================================== -->
+<!--                  ABOUT                                 -->
+<!-- ===================================================== -->
 
-<img align="right" width="340" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXF6dTNoMnBqMzdrMXdhdTRrYjQ4a2N2bm0yaHhlbGxvZG81aXhqYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l3vRfNA1p0rvhMSvS/giphy.gif">
+# 👋 About Me
 
 ```ts
 const sachin = {
-
     role: "Software Developer",
 
-    specialization: [
-        "Full Stack Development",
-        "Artificial Intelligence",
-        "Modern SaaS Platforms",
+    focus: [
+        "Full-Stack Web Development",
+        "AI-Integrated Applications",
+        "SaaS Platforms",
         "REST APIs",
         "Cloud Deployment"
     ],
 
-    currentlyLearning: [
-        "Distributed Systems",
-        "System Design",
-        "AI Agents",
-        "Enterprise SaaS"
-    ],
-
-    passions: [
+    approach: [
         "Clean UI",
-        "Performance",
         "Scalable Architecture",
-        "Developer Experience"
+        "Reliable Backends"
     ],
 
-    motto:
-        "Build products people love."
+    motto: "Build products people love."
 }
 ```
 
-<br>
+### ⚡ Current Focus
 
----
-
-## ⚡ Current Focus
-
-- 🚀 Building modern SaaS applications
-- 🤖 AI integrations & automation
-- 🏗 Enterprise-grade architectures
-- ⚙️ Backend performance optimization
-- 🎨 Beautiful user experiences
-
----
+- 🚀 Building `RoboBooks` — a SaaS accounting & finance platform
+- 📁 Building `Sortify` — a smart file & task organizer
+- 🥐 Building `Bake Ree` — a bakery e-commerce platform
+- 🤖 Integrating AI into full-stack SaaS products
+- 🎨 Clean UI, REST APIs, and cloud deployment across all of the above
 
 <div align="center">
 
-### ✨ *"Great software is invisible. Users remember the experience, not the implementation."*
+### *"Great software is invisible — users remember the experience, not the implementation."*
 
 </div>
 
----  <!-- ===================================================== -->
-<!--                 APPLE GLASS TECH STACK                -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:06B6D4,50:2563EB,100:0F172A&height=2" />
+
+<!-- ===================================================== -->
+<!--                  TECH STACK                            -->
 <!-- ===================================================== -->
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2"/>
+# 🧩 Tech Ecosystem
 
-# 🍏 Tech Ecosystem
+### Languages
 
 <div align="center">
 
-> ### *"The right tools disappear into the background. The product shines."*
+<img src="https://skillicons.dev/icons?i=ts,js,python,java,c,go,rust,php" />
 
 </div>
 
-<br>
-
-# 💻 Languages
+### Frameworks & Development
 
 <div align="center">
 
-| TypeScript | JavaScript | Python | PHP |
-|:---------:|:----------:|:------:|:---:|
-| <img src="https://skillicons.dev/icons?i=ts" width="55"/> | <img src="https://skillicons.dev/icons?i=js" width="55"/> | <img src="https://skillicons.dev/icons?i=python" width="55"/> | <img src="https://skillicons.dev/icons?i=php" width="55"/> |
-
-| Java | Go | Rust | C |
-|:----:|:--:|:----:|:-:|
-| <img src="https://skillicons.dev/icons?i=java" width="55"/> | <img src="https://skillicons.dev/icons?i=go" width="55"/> | <img src="https://skillicons.dev/icons?i=rust" width="55"/> | <img src="https://skillicons.dev/icons?i=c" width="55"/> |
+<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,nestjs,laravel,tailwind" />
 
 </div>
 
----
-
-# ⚡ Frontend
+### Databases & Backend Services
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vite,html,css,js,ts" />
+<img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres,firebase" />
 
 </div>
 
-<br>
+### Tools & Utilities
 
 <div align="center">
 
-| React | Next.js | Tailwind | Vite |
-|:----:|:------:|:---------:|:----:|
-| ⚛️ | ▲ | 🎨 | ⚡ |
+<img src="https://skillicons.dev/icons?i=git,postman,arduino,raspberrypi,eslint" />
 
 </div>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0F172A,50:2563EB,100:06B6D4&height=2" />
 
-# ⚙️ Backend
+<!-- ===================================================== -->
+<!--                  DEVELOPER DASHBOARD                   -->
+<!-- ===================================================== -->
+
+# 📊 Developer Dashboard
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,laravel" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&cache_seconds=1800" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=1800" />
 
 </div>
 
-<br>
+### 🏆 Trophies
 
 <div align="center">
 
-| Node.js | Express | NestJS | Laravel |
-|:-------:|:-------:|:------:|:--------:|
-| 🟢 | 🚀 | 🟥 | ❤️ |
+<img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=tokyonight&no-frame=true&row=1&column=6&margin-w=8" />
 
 </div>
 
----
-
-# 🗄️ Databases
+### 📈 Contribution Activity
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres,redis,firebase" />
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=sachin-iam&theme=react-dark&hide_border=true&area=true" />
 
 </div>
 
-<br>
+### 🔥 Streak
 
 <div align="center">
 
-| MongoDB | PostgreSQL | MySQL | Redis | Firebase |
-|:-------:|:----------:|:-----:|:------:|:--------:|
-| 🍃 | 🐘 | 🐬 | ❤️ | 🔥 |
+<img src="https://streak-stats.demolab.com/?user=sachin-iam&theme=tokyonight&hide_border=true&cache_seconds=1800" />
+
+<sub>Public contribution count only — the buggy <code>count_private</code> flag has been removed for accuracy.</sub>
 
 </div>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:06B6D4,50:2563EB,100:0F172A&height=2" />
 
-# ☁️ Cloud & DevOps
+<!-- ===================================================== -->
+<!--                  CONTRIBUTION SNAKE                    -->
+<!-- ===================================================== -->
+
+# 🐍 Contribution Snake
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=docker,linux,nginx,githubactions,git,github,bash" />
+<img src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/github-contribution-grid-snake.svg" />
 
 </div>
 
-<br>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0F172A,50:2563EB,100:06B6D4&height=2" />
+
+<!-- ===================================================== -->
+<!--                  FEATURED PROJECTS                     -->
+<!-- ===================================================== -->
+
+# 🚀 Featured Projects
+
+<table align="center">
+  <tr>
+    <td width="33%" valign="top">
+      <h3>💻 RoboBooks</h3>
+      SaaS-based Accounting & Finance platform for smart bookkeeping and expense tracking.
+      <br/><br/>
+      <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+      <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+    </td>
+    <td width="33%" valign="top">
+      <h3>📁 Sortify</h3>
+      Smart File & Task organizer for efficient categorization and workflow automation.
+      <br/><br/>
+      <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+    </td>
+    <td width="33%" valign="top">
+      <h3>🥐 Bake Ree</h3>
+      Bakery-focused e-commerce ordering and product management system.
+      <br/><br/>
+      <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+      <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+    </td>
+  </tr>
+</table>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0F172A,50:2563EB,100:06B6D4&height=2" />
+
+<!-- ===================================================== -->
+<!--                  ENGINEERING PHILOSOPHY                -->
+<!-- ===================================================== -->
 
 <div align="center">
 
-| Docker | Linux | Nginx | GitHub Actions |
-|:------:|:------:|:------:|:--------------:|
-| 🐳 | 🐧 | 🌐 | ⚙️ |
-
-</div>
-
----
-
-# 🛠 Development Tools
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=postman,eslint,arduino,raspberrypi,vscode" />
-
-</div>
-
----
-
-<div align="center">
-
-## 🚀 Engineering Philosophy
+## 🎯 Engineering Philosophy
 
 <table>
 <tr>
 <td align="center" width="33%">
 
-### 🎯
-
-### Clean Code
-
-Readable architecture
-
-Maintainable systems
+### 🧹 Clean Code
+Readable architecture<br/>Maintainable systems
 
 </td>
-
 <td align="center" width="33%">
 
-### ⚡
-
-### Performance
-
-Fast APIs
-
-Optimized UX
-
-Efficient backend
+### ⚡ Performance
+Fast APIs<br/>Optimized UX
 
 </td>
-
 <td align="center" width="33%">
 
-### 🚀
-
-### Scalability
-
-Enterprise architecture
-
-Cloud ready
-
-Future proof
+### 📈 Scalability
+Cloud-ready<br/>Future-proof
 
 </td>
-
 </tr>
 </table>
 
 </div>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:06B6D4,50:2563EB,100:0F172A" />
 
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=gradient"/>
-
-</div>  ██████████████████████████████████
-
-Animated Aurora Header
-
-██████████████████████████████████
-
-Your Name
-Animated typing
-
-Social pills
-
-──────────────
-
-About
-
-──────────────
-
-Tech Stack
-(beautiful SVG cards)
-
-──────────────
-
-Developer Dashboard
-
-Stats
-Streak
-Languages
-Achievements
-
-──────────────
-
-Animated Snake
-
-──────────────
-
-Featured Projects
-(real glass cards)
-
-──────────────
-
-Experience Timeline
-
-──────────────
-
-Current Focus
-
-──────────────
-
-Footer  
+<b>Keep innovating and building scalable products 🚀</b>
+</div>
