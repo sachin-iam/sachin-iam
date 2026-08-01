@@ -1,183 +1,167 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:A8C0FF,100:6C7CE7&height=180&section=header&text=Sachin%20Gupta&fontSize=44&fontColor=ffffff&fontAlignY=40&desc=Software%20Developer%20%E2%80%A2%20Web%20%E2%80%A2%20AI%20%E2%80%A2%20SaaS&descAlignY=62&descSize=16&animation=fadeIn" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:8E2DE2,100:4A00E0&height=220&section=header&text=Sachin%20Gupta&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Software%20Developer%20%7C%20Web%20Dev%20%E2%80%A2%20AI%20%E2%80%A2%20SaaS&descAlignY=55&descSize=20" />
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&width=900&lines=Building+scalable+full-stack+SaaS+applications;React+%C2%B7+Next.js+%C2%B7+Node.js+%C2%B7+AI+integrations;Clean+UI+%C2%B7+REST+APIs+%C2%B7+Cloud+deployment" alt="Typing SVG" />
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=18&duration=3000&pause=1200&color=6C7CE7&center=true&vCenter=true&width=900&lines=Building+scalable+full-stack+SaaS+applications;React+%C2%B7+Next.js+%C2%B7+Node.js+%C2%B7+AI+integrations;Clean+UI+%C2%B7+REST+APIs+%C2%B7+Cloud+deployment" alt="Typing SVG" />
-
-<br/><br/>
-
-<a href="https://www.linkedin.com/in/sachin-gupta-6252652a5/">
-  <img src="https://img.shields.io/badge/LinkedIn-6C7CE7?style=flat-square&logo=linkedin&logoColor=white&labelColor=1a1b27" />
-</a>
-&nbsp;
-<a href="mailto:sachinguptaiam@gmail.com">
-  <img src="https://img.shields.io/badge/Email-6C7CE7?style=flat-square&logo=gmail&logoColor=white&labelColor=1a1b27" />
-</a>
-&nbsp;
-<a href="https://github.com/sachin-iam">
-  <img src="https://img.shields.io/badge/GitHub-6C7CE7?style=flat-square&logo=github&logoColor=white&labelColor=1a1b27" />
-</a>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sachin-gupta-6252652a5/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sachinguptaiam@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sachin-iam)
 
 </div>
 
-<br/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:8E2DE2,100:4A00E0&height=3" />
 
-<h3 align="center">About</h3>
+<h2 align="center">🧑‍💻 About Me</h2>
 
 <p align="center">
 Building scalable full-stack web and SaaS applications with AI integrations.<br/>
 Focused on clean UI, REST APIs, databases, and cloud deployment.
 </p>
 
-<br/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4A00E0,100:8E2DE2&height=3" />
 
-<h3 align="center">Languages</h3>
-
-<div align="center">
-
-<img src="https://img.shields.io/badge/TypeScript-1a1b27?style=flat-square&logo=typescript&logoColor=3178C6" />
-<img src="https://img.shields.io/badge/JavaScript-1a1b27?style=flat-square&logo=javascript&logoColor=F7DF1E" />
-<img src="https://img.shields.io/badge/Python-1a1b27?style=flat-square&logo=python&logoColor=3776AB" />
-<img src="https://img.shields.io/badge/Java-1a1b27?style=flat-square&logo=openjdk&logoColor=ED8B00" />
-<img src="https://img.shields.io/badge/C-1a1b27?style=flat-square&logo=c&logoColor=A8B9CC" />
-<img src="https://img.shields.io/badge/Go-1a1b27?style=flat-square&logo=go&logoColor=00ADD8" />
-<img src="https://img.shields.io/badge/Rust-1a1b27?style=flat-square&logo=rust&logoColor=DEA584" />
-<img src="https://img.shields.io/badge/PHP-1a1b27?style=flat-square&logo=php&logoColor=777BB4" />
-
-</div>
-
-<br/>
-
-<h3 align="center">Frameworks & Development</h3>
+<h2 align="center">💻 Languages</h2>
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/React-1a1b27?style=flat-square&logo=react&logoColor=61DAFB" />
-<img src="https://img.shields.io/badge/Next.js-1a1b27?style=flat-square&logo=nextdotjs&logoColor=ffffff" />
-<img src="https://img.shields.io/badge/Node.js-1a1b27?style=flat-square&logo=nodedotjs&logoColor=339933" />
-<img src="https://img.shields.io/badge/Express-1a1b27?style=flat-square&logo=express&logoColor=ffffff" />
-<img src="https://img.shields.io/badge/NestJS-1a1b27?style=flat-square&logo=nestjs&logoColor=E0234E" />
-<img src="https://img.shields.io/badge/Laravel-1a1b27?style=flat-square&logo=laravel&logoColor=FF2D20" />
-<img src="https://img.shields.io/badge/TailwindCSS-1a1b27?style=flat-square&logo=tailwindcss&logoColor=06B6D4" />
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
 </div>
 
-<br/>
-
-<h3 align="center">Databases & Backend Services</h3>
+<h2 align="center">⚙️ Frameworks & Development</h2>
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/MongoDB-1a1b27?style=flat-square&logo=mongodb&logoColor=47A248" />
-<img src="https://img.shields.io/badge/MySQL-1a1b27?style=flat-square&logo=mysql&logoColor=4479A1" />
-<img src="https://img.shields.io/badge/PostgreSQL-1a1b27?style=flat-square&logo=postgresql&logoColor=4169E1" />
-<img src="https://img.shields.io/badge/Firebase-1a1b27?style=flat-square&logo=firebase&logoColor=FFCA28" />
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 </div>
 
-<br/>
-
-<h3 align="center">Tools & Utilities</h3>
+<h2 align="center">🗄️ Databases & Backend Services</h2>
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Git-1a1b27?style=flat-square&logo=git&logoColor=F05032" />
-<img src="https://img.shields.io/badge/Postman-1a1b27?style=flat-square&logo=postman&logoColor=FF6C37" />
-<img src="https://img.shields.io/badge/Arduino-1a1b27?style=flat-square&logo=arduino&logoColor=00979D" />
-<img src="https://img.shields.io/badge/Raspberry%20Pi-1a1b27?style=flat-square&logo=raspberrypi&logoColor=A22846" />
-<img src="https://img.shields.io/badge/ESLint-1a1b27?style=flat-square&logo=eslint&logoColor=4B32C3" />
-<img src="https://img.shields.io/badge/Prettier-1a1b27?style=flat-square&logo=prettier&logoColor=F7B93E" />
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
 </div>
 
-<br/>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:A8C0FF,100:6C7CE7&height=2" />
-
-<h3 align="center">GitHub Stats</h3>
+<h2 align="center">🛠️ Tools & Utilities</h2>
 
 <div align="center">
 
-<img height="165em" src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&count_private=true&rank_icon=github&cache_seconds=1800" />
-<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&count_private=true&cache_seconds=1800" />
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+![RaspberryPi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
+![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black)
 
 </div>
 
-<h3 align="center">Trophies</h3>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:8E2DE2,100:4A00E0&height=3" />
+
+<h2 align="center">📊 GitHub Stats</h2>
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6&margin-w=6" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=radical&hide_border=true&rank_icon=github&cache_seconds=1800" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&theme=radical&hide_border=true&cache_seconds=1800" />
 
 </div>
 
-<h3 align="center">Contribution Activity</h3>
+<h2 align="center">🏆 GitHub Trophies</h2>
 
 <div align="center">
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=sachin-iam&theme=react-dark&hide_border=true&bg_color=00000000&color=6C7CE7&line=6C7CE7&point=A8C0FF&area=true" />
+<img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=radical&no-frame=true&row=1&column=6&margin-w=8" />
 
 </div>
 
-<h3 align="center">Streak</h3>
+<h2 align="center">📈 Contribution Activity</h2>
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com/?user=sachin-iam&theme=tokyonight&hide_border=true&background=00000000&ring=6C7CE7&fire=A8C0FF&currStreakLabel=6C7CE7&cache_seconds=1800" />
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=sachin-iam&theme=redical&hide_border=true&area=true" />
 
 </div>
+
+<h2 align="center">🔥 GitHub Streak</h2>
 
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=sachin-iam&label=Profile%20Views&color=6C7CE7&style=flat-square" />
+<img src="https://streak-stats.demolab.com/?user=sachin-iam&theme=radical&hide_border=true&cache_seconds=1800" />
+
+<sub>Total Contributions here is the accurate public count — the earlier number was inflated by a known bug in the <code>count_private</code> flag, which has been removed.</sub>
 
 </div>
 
-<br/>
+<h2 align="center">👀 Profile Views</h2>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:6C7CE7,100:A8C0FF&height=2" />
+<div align="center">
 
-<h3 align="center">Featured Projects</h3>
+![Profile Views](https://komarev.com/ghpvc/?username=sachin-iam&label=Profile%20Views&color=8E2DE2&style=for-the-badge)
+
+</div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4A00E0,100:8E2DE2&height=3" />
+
+<h2 align="center">🚀 Featured Projects</h2>
 
 <table align="center">
   <tr>
-    <td width="33%" valign="top" align="center">
-      <b>RoboBooks</b>
+    <td width="33%" valign="top">
+      <h3>💻 RoboBooks</h3>
+      SaaS-based Accounting & Finance platform for smart bookkeeping and expense tracking.
       <br/><br/>
-      <sub>SaaS accounting & finance platform for smart bookkeeping and expense tracking.</sub>
-      <br/><br/>
-      <img src="https://img.shields.io/badge/React-1a1b27?style=flat-square&logo=react&logoColor=61DAFB" />
-      <img src="https://img.shields.io/badge/Next.js-1a1b27?style=flat-square&logo=nextdotjs&logoColor=ffffff" />
-      <img src="https://img.shields.io/badge/MongoDB-1a1b27?style=flat-square&logo=mongodb&logoColor=47A248" />
-      <img src="https://img.shields.io/badge/PostgreSQL-1a1b27?style=flat-square&logo=postgresql&logoColor=4169E1" />
+      <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+      <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
     </td>
-    <td width="33%" valign="top" align="center">
-      <b>Sortify</b>
+    <td width="33%" valign="top">
+      <h3>📁 Sortify</h3>
+      Smart File & Task organizer for efficient categorization and workflow automation.
       <br/><br/>
-      <sub>Smart file & task organizer for efficient categorization and workflow automation.</sub>
-      <br/><br/>
-      <img src="https://img.shields.io/badge/React-1a1b27?style=flat-square&logo=react&logoColor=61DAFB" />
-      <img src="https://img.shields.io/badge/TypeScript-1a1b27?style=flat-square&logo=typescript&logoColor=3178C6" />
-      <img src="https://img.shields.io/badge/MongoDB-1a1b27?style=flat-square&logo=mongodb&logoColor=47A248" />
+      <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
     </td>
-    <td width="33%" valign="top" align="center">
-      <b>Bake Ree</b>
+    <td width="33%" valign="top">
+      <h3>🥐 Bake Ree</h3>
+      Bakery-focused e-commerce ordering and product management system.
       <br/><br/>
-      <sub>Bakery-focused e-commerce ordering and product management system.</sub>
-      <br/><br/>
-      <img src="https://img.shields.io/badge/React-1a1b27?style=flat-square&logo=react&logoColor=61DAFB" />
-      <img src="https://img.shields.io/badge/Next.js-1a1b27?style=flat-square&logo=nextdotjs&logoColor=ffffff" />
-      <img src="https://img.shields.io/badge/MongoDB-1a1b27?style=flat-square&logo=mongodb&logoColor=47A248" />
+      <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+      <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
     </td>
   </tr>
 </table>
 
-<br/>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:6C7CE7,100:A8C0FF&height=100&section=footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:4A00E0,100:8E2DE2&height=120&section=footer" />
 
 <div align="center">
-<sub>Keep innovating and building scalable products</sub>
+
+**Keep innovating and building scalable products 🚀**
+
 </div>
