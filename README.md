@@ -2,156 +2,129 @@
 
 # 👋 Sachin Gupta
 
-### **Software Developer | Full Stack Web Developer • AI • SaaS**
+### **Software Developer | Web Development • AI • SaaS**
 
-Building scalable full-stack web applications, AI-powered solutions, and modern SaaS products with a focus on performance, clean architecture, and great user experiences.
+</div>
 
-<br>
+---
+
+## 👨‍💻 About Me
+
+Building scalable full-stack web and SaaS applications with AI integrations.
+Focused on clean UI, REST APIs, databases, and cloud deployment.
+
+<div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sachin-gupta-6252652a5/)
-&nbsp;
+&nbsp;&nbsp;
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sachinguptaiam@gmail.com)
-&nbsp;
+&nbsp;&nbsp;
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sachin-iam)
 
 </div>
 
 ---
 
-# 💻 Languages
+## 💻 Languages
 
-<div align="center">
+<img src="https://skillicons.dev/icons?i=ts,js,python,java,c,go,rust,php" height="45"/>
 
-<img src="https://skillicons.dev/icons?i=ts,js,python,php,java,c,go,rust" />
-
-<br><br>
-
-**TypeScript • JavaScript • Python • PHP • Java • C • Go • Rust**
-
-</div>
+**TypeScript · JavaScript · Python · Java · C · Go · Rust · PHP**
 
 ---
 
-# ⚙️ Frameworks & Libraries
+## ⚙️ Frameworks & Development
 
-<div align="center">
+<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,nestjs,laravel,tailwind" height="45"/>
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,nestjs,laravel,tailwind" />
-
-<br><br>
-
-**React • Next.js • Node.js • Express.js • NestJS • Laravel • Tailwind CSS**
-
-</div>
+**React · Next.js · Node.js · Express.js · NestJS · Laravel · TailwindCSS**
 
 ---
 
-# 🗄️ Databases
+## 🗄️ Databases & Backend Services
 
-<div align="center">
+<img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres,firebase" height="45"/>
 
-<img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres,firebase,redis" />
-
-<br><br>
-
-**MongoDB • MySQL • PostgreSQL • Firebase • Redis**
-
-</div>
+**MongoDB · MySQL · PostgreSQL · Firebase**
 
 ---
 
-# 🛠️ Tools & DevOps
+## 🛠️ Tools & Utilities
 
-<div align="center">
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=git,postman,arduino,raspberrypi" height="45"/>
+  &nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/eslint/eslint.png" height="45"/>
+  &nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-icon-dark.svg" height="45"/>
+</p>
 
-<img src="https://skillicons.dev/icons?i=git,github,docker,linux,nginx,vite,postman,githubactions,eslint,arduino,raspberrypi" />
-
-<br><br>
-
-**Git • GitHub • Docker • Linux • Nginx • Vite • GitHub Actions • Postman • ESLint • Arduino • Raspberry Pi**
-
-</div>
-
----
-
-# 📊 GitHub Statistics
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=transparent&hide_border=true&rank_icon=github&cache_seconds=1800"/>
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&theme=transparent&hide_border=true&cache_seconds=1800"/>
-
-</div>
+<p align="center"><b>Git · Postman · Arduino · Raspberry Pi · ESLint · Prettier</b></p>
 
 ---
 
-# 🔥 GitHub Streak
+## 📊 GitHub Stats
 
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=sachin-iam&theme=transparent&hide_border=true"/>
-
-</div>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=transparent&hide_border=true&rank_icon=github&count_private=true" />
+</p>
 
 ---
 
-# 📈 Contribution Graph
+## 🏆 GitHub Trophies
 
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sachin-iam&theme=github-compact"/>
-
-</div>
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=onedark&no-frame=true&row=1&column=6" />
+</p>
 
 ---
 
-# 👀 Profile Views
+## 📈 Contribution Graph
 
-<div align="center">
-
-<img src="https://komarev.com/ghpvc/?username=sachin-iam&label=Profile%20Views&color=7a18f5&style=for-the-badge"/>
-
-</div>
+![Graph](https://github-readme-activity-graph.vercel.app/graph?username=sachin-iam&theme=github-compact)
 
 ---
 
-# 🚀 Featured Projects
+## 🔥 GitHub Streak *(Live Counter)*
 
-## 💼 RoboBooks
-
-**A modern Accounting & Finance SaaS platform for bookkeeping, invoicing, expense management, and financial reporting.**
-
-**Tech Stack**
-
-`React` • `Next.js` • `Node.js` • `Express.js` • `MongoDB` • `PostgreSQL`
+![](https://streak-stats.demolab.com/?user=sachin-iam&theme=transparent&hide_border=true&cache_seconds=1800)
 
 ---
 
-## 📁 Sortify
+## 👀 Visitor Count
 
-**An intelligent file and task management platform that organizes workflows through smart categorization and automation.**
-
-**Tech Stack**
-
-`React` • `TypeScript` • `Node.js` • `MongoDB`
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=sachin-iam&label=Profile%20Views&color=7a18f5&style=for-the-badge" />
+</p>
 
 ---
 
-## 🥐 Bake Ree
+## 🌍 Top Languages
 
-**A bakery-focused e-commerce platform for online ordering, inventory management, and product administration.**
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&hide_border=true&theme=transparent&count_private=true" />
+</p>
 
-**Tech Stack**
+---
 
-`React` • `Next.js` • `Node.js` • `Express.js` • `MongoDB`
+## 🚀 Featured Projects
+
+### 💻 RoboBooks
+A SaaS-based Accounting & Finance platform for smart bookkeeping and expense tracking.
+**Tech:** React · Next.js · Node.js · Express.js · MongoDB · PostgreSQL
+
+### 📁 Sortify
+A smart File & Task organizer for efficient categorization and workflow automation.
+**Tech:** React · TypeScript · Node.js · MongoDB
+
+### 🥐 Bake Ree
+Bakery-focused E-Commerce ordering and product management system.
+**Tech:** React · Next.js · Node.js · Express.js · MongoDB
 
 ---
 
 <div align="center">
 
-### 🚀 Always learning. Always building. Always improving.
-
-*"Turning ideas into scalable software."*
+**Keep innovating and building scalable products 🚀**
 
 </div>
