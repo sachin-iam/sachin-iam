@@ -24,32 +24,9 @@ I'm an SDE focused on full-stack and SaaS engineering — building products end-
 
 ---
 
-## 🏗️ Currently Building
-
-<table align="center">
-<tr>
-<th>Project</th>
-<th>Focus</th>
-<th>Status</th>
-</tr>
-<tr>
-<td><b>ClassMEE</b></td>
-<td>Multi-tenant EdTech SaaS — security-first streaming & live classrooms</td>
-<td><img src="https://img.shields.io/badge/In%20Development-7A18F5?style=flat-square" /></td>
-</tr>
-<tr>
-<td><b>Fee Result</b></td>
-<td>Dual-mode multi-tenant SaaS for schools & colleges</td>
-<td><img src="https://img.shields.io/badge/In%20Development-7A18F5?style=flat-square" /></td>
-</tr>
-<tr>
-<td><b>Poetry</b></td>
-<td>Full-stack e-commerce platform + admin dashboard</td>
-<td><img src="https://img.shields.io/badge/In%20Development-7A18F5?style=flat-square" /></td>
-</tr>
-</table>
-
-<sub>Statuses are placeholders — send the real ones and I'll swap them in.</sub>
+<div align="center">
+<img src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/blackhole.svg" width="100%" alt="animated black hole" />
+</div>
 
 ---
 
@@ -169,11 +146,6 @@ Customer storefront (catalog, cart, checkout, appointments, blog) paired with an
 <!-- Send me the repo/live URL and I'll add GitHub / Live Demo buttons here -->
 
 <br>
-
-### ➕ Open Slot
-*Name your 4th project and I'll build the card.*
-
----
 
 <div align="center">
 
