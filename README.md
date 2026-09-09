@@ -54,12 +54,12 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=transparent&hide_border=true&rank_icon=github&cache_seconds=1800" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&theme=transparent&hide_border=true&cache_seconds=1800" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=sachin-iam&show_icons=true&theme=transparent&hide_border=true&rank_icon=github" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&theme=transparent&hide_border=true" />
 
 <img src="https://streak-stats.demolab.com?user=sachin-iam&theme=transparent&hide_border=true" alt="GitHub streak stats" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=darkhub&no-frame=true&row=1&column=6&margin-w=8" alt="GitHub trophies" />
+<img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=onedark&row=1&column=6" alt="GitHub trophies" />
 
 </div>
 
@@ -67,16 +67,20 @@
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/github-contribution-grid-snake.svg" />
-  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/dist/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/dist/github-contribution-grid-snake.svg" />
+  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/dist/github-contribution-grid-snake.svg" />
 </picture>
+
+<sub>Renders once the <code>snake.yml</code> workflow below has run at least once — kick it off manually from the Actions tab if you don't want to wait for the next scheduled run.</sub>
 </div>
 
 ### 📈 Contribution Graph
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sachin-iam&theme=github-compact&hide_border=true" alt="Contribution activity graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=sachin-iam&theme=github-compact" alt="Contribution activity graph" />
+
+<sub>This one runs on a free shared instance and occasionally goes down on its own — if it's ever broken with nothing else wrong, it's that service, not your repo.</sub>
 </div>
 
 <br>
