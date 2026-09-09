@@ -30,7 +30,7 @@ I'm an SDE focused on full-stack and SaaS engineering — building products end-
 
 <img src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/divider.svg" width="100%" alt="" />
 
-🧰 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=26&duration=1&pause=100000&color=7A18F5&center=true&vCenter=true&width=500&lines=TECH+STACK&repeat=false" alt="Tech Stack" />
+ <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=26&duration=1&pause=100000&color=7A18F5&center=true&vCenter=true&width=500&lines=TECH+STACK&repeat=false" alt="Tech Stack" />
 
 **Languages**
 
@@ -77,7 +77,7 @@ I'm an SDE focused on full-stack and SaaS engineering — building products end-
 
 <img src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/divider.svg" width="100%" alt="" />
 
-📊 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=26&duration=1&pause=100000&color=7A18F5&center=true&vCenter=true&width=500&lines=GITHUB+STATS&repeat=false" alt="GitHub Stats" />
+ <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=26&duration=1&pause=100000&color=7A18F5&center=true&vCenter=true&width=500&lines=GITHUB+STATS&repeat=false" alt="GitHub Stats" />
 
 <div align="center">
 
@@ -108,7 +108,7 @@ I'm an SDE focused on full-stack and SaaS engineering — building products end-
 
 <img src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/divider.svg" width="100%" alt="" />
 
-🚀 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=26&duration=1&pause=100000&color=7A18F5&center=true&vCenter=true&width=500&lines=FEATURED+PROJECTS&repeat=false" alt="Featured Projects" />
+ <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=26&duration=1&pause=100000&color=7A18F5&center=true&vCenter=true&width=500&lines=FEATURED+PROJECTS&repeat=false" alt="Featured Projects" />
 
 ### 🎓 ClassMEE
 **Multi-tenant EdTech "Coaching-as-a-Service" SaaS**
