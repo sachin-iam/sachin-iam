@@ -14,7 +14,7 @@
 
 </div>
 
----
+<img src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/divider.svg" width="100%" alt="" />
 
 ## 🧑‍💻 Who Am I?
 
@@ -22,13 +22,13 @@ I'm an SDE focused on full-stack and SaaS engineering — building products end-
 
 <!-- Send me a few lines about your background/focus and I'll drop it in as-is. -->
 
----
+<img src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/divider.svg" width="100%" alt="" />
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/blackhole.svg" width="100%" alt="animated black hole" />
 </div>
 
----
+<img src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/divider.svg" width="100%" alt="" />
 
 ## 🧰 Tech Stack
 
@@ -75,7 +75,7 @@ I'm an SDE focused on full-stack and SaaS engineering — building products end-
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
 
----
+<img src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/divider.svg" width="100%" alt="" />
 
 ## 📊 GitHub Stats
 
@@ -99,7 +99,7 @@ I'm an SDE focused on full-stack and SaaS engineering — building products end-
 </picture>
 </div>
 
----
+<img src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/divider.svg" width="100%" alt="" />
 
 ## 🚀 Featured Projects
 
