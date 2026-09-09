@@ -92,9 +92,9 @@ I'm an SDE focused on full-stack and SaaS engineering — building products end-
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/light.svg" />
-  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/dist/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/dist/github-contribution-grid-snake.svg" />
+  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/dist/github-contribution-grid-snake.svg" />
 </picture>
 </div>
 
