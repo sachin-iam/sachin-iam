@@ -1,10 +1,8 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=7A18F5&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Sachin+Gupta;SDE+%7C+Full-Stack+%26+SaaS+Systems;Building+secure%2C+scalable+platforms" alt="Typing SVG" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7A18F5,100:1a1a2e&height=200&section=header&text=Sachin%20Gupta&fontSize=60&fontColor=ffffff&animation=fadeIn&desc=SDE%20%7C%20Full-Stack%20%26%20SaaS%20Engineer&descAlignY=65&descSize=20" width="100%"/>
 
-<br>
-
-**Software Development Engineer building full-stack, security-conscious SaaS platforms — from multi-tenant architectures to encrypted content delivery.**
+**Building full-stack, security-conscious SaaS platforms — from multi-tenant architectures to encrypted content delivery.**
 
 <br>
 
@@ -16,15 +14,15 @@
 
 </div>
 
-<br>
+---
 
 ## 🧑‍💻 Who Am I?
 
 I'm an SDE focused on full-stack and SaaS engineering — building products end-to-end, from database schema and API design through to the UI. Recent work spans multi-tenant architectures, encrypted content delivery, and real-time systems, using a stack built around TypeScript/JavaScript, React/Next.js, and Node.js-based backends.
 
-<!-- Want a longer version here? Send me a few lines about your background/focus and I'll drop it in as-is. -->
+<!-- Send me a few lines about your background/focus and I'll drop it in as-is. -->
 
-<br>
+---
 
 ## 🏗️ Currently Building
 
@@ -51,9 +49,9 @@ I'm an SDE focused on full-stack and SaaS engineering — building products end-
 </tr>
 </table>
 
-<sub>Statuses are placeholders — tell me the real status of each (in-progress / live / on hold) and I'll swap them in.</sub>
+<sub>Statuses are placeholders — send the real ones and I'll swap them in.</sub>
 
-<br>
+---
 
 ## 🧰 Tech Stack
 
@@ -100,7 +98,7 @@ I'm an SDE focused on full-stack and SaaS engineering — building products end-
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
 
-<br>
+---
 
 ## 📊 GitHub Stats
 
@@ -111,35 +109,21 @@ I'm an SDE focused on full-stack and SaaS engineering — building products end-
 
 <img src="https://streak-stats.demolab.com?user=sachin-iam&theme=transparent&hide_border=true&ring=7A18F5&fire=7A18F5&currStreakLabel=7A18F5" alt="GitHub streak stats" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=sachin-iam&theme=onedark&row=1&column=6" alt="GitHub trophies" />
-
 </div>
 
 ### 🐍 Contribution Snake
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/dist/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/dist/github-contribution-grid-snake.svg" />
-  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/dist/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/light.svg" />
+  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/light.svg" />
 </picture>
-
-<sub>Renders once the <code>snake.yml</code> workflow has run at least once — trigger it manually from the Actions tab.</sub>
 </div>
 
-### 📈 Contribution Graph
-
-<div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sachin-iam&theme=github-compact&color=7A18F5&line=7A18F5&point=c9d1d9" alt="Contribution activity graph" />
-</div>
-
-<br>
+---
 
 ## 🚀 Featured Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
 
 ### 🎓 ClassMEE
 **Multi-tenant EdTech "Coaching-as-a-Service" SaaS**
@@ -148,15 +132,14 @@ Security-first platform for coaching centers with encrypted HLS video streaming,
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Java Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![WebRTC](https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
 
 <!-- Send me the repo/live URL and I'll add GitHub / Live Demo buttons here -->
 
-</td>
-<td width="50%" valign="top">
+<br>
 
 ### 💰 Fee Result — Multi-Tenant SaaS
 **Fee-result management platform for schools & colleges**
@@ -164,17 +147,14 @@ Security-first platform for coaching centers with encrypted HLS video streaming,
 Single Laravel codebase running in dual tenancy modes — single-domain and subdomain-with-tenant-DB-switching — with shared controllers/policies, a central provisioning DB, and per-tenant MySQL isolation.
 
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL/MariaDB-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL%2FMariaDB-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 
 <!-- Send me the repo/live URL and I'll add GitHub / Live Demo buttons here -->
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<br>
 
 ### 🌸 Poetry — E-commerce Platform
 **Full-stack storefront with an admin operations dashboard**
@@ -188,20 +168,17 @@ Customer storefront (catalog, cart, checkout, appointments, blog) paired with an
 
 <!-- Send me the repo/live URL and I'll add GitHub / Live Demo buttons here -->
 
-</td>
-<td width="50%" valign="top">
-
-<i>Open slot — name your 4th project and I'll build the card.</i>
-
-</td>
-</tr>
-</table>
-
 <br>
+
+### ➕ Open Slot
+*Name your 4th project and I'll build the card.*
+
+---
 
 <div align="center">
 
-### 🚀 Always learning. Always building. Always improving.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:7A18F5&height=100&section=footer" width="100%"/>
+
 *"Turning ideas into scalable software."*
 
 </div>
