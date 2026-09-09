@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7A18F5,100:1a1a2e&height=200&section=header&text=Sachin%20Gupta&fontSize=60&fontColor=ffffff&animation=fadeIn&desc=SDE%20%7C%20Full-Stack%20%26%20SaaS%20Engineer&descAlignY=65&descSize=20" width="100%"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=7A18F5&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Sachin+Gupta;SDE+%7C+Full-Stack+%26+SaaS+Engineer;Building+secure%2C+scalable+platforms" alt="Typing SVG" />
 
 **Building full-stack, security-conscious SaaS platforms — from multi-tenant architectures to encrypted content delivery.**
 
@@ -92,9 +92,9 @@ I'm an SDE focused on full-stack and SaaS engineering — building products end-
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/dist/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/dist/github-contribution-grid-snake.svg" />
-  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/dist/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/github-contribution-grid-snake.svg" />
+  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/output/github-contribution-grid-snake.svg" />
 </picture>
 </div>
 
@@ -149,8 +149,7 @@ Customer storefront (catalog, cart, checkout, appointments, blog) paired with an
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:7A18F5&height=100&section=footer" width="100%"/>
-
+### 🚀 Always learning. Always building. Always improving.
 *"Turning ideas into scalable software."*
 
 </div>
