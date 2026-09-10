@@ -92,7 +92,7 @@ I'm an SDE focused on full-stack and SaaS engineering — building products end-
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/profile-summary-card-output/radical/3-stats.svg" alt="GitHub summary stats" />
-<img src="https://raw.githubusercontent.com/sachin-iam/sachin-iam/main/profile-summary-card-output/radical/1-repos-per-language.svg" alt="Most used languages" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-iam&layout=compact&theme=radical&hide_border=true" alt="Most used languages" />
 
 </div>
 
