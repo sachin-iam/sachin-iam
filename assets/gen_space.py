@@ -5,15 +5,14 @@
 - title-*.svg: typed section titles with a thin fading underline, transparent background.
 - divider.svg: just a thin fading line, transparent background.
 - tech-stack.svg: minimal grouped pills.
-- card-*.svg: project cards; tech pills never overflow, extras collapse into "+N".
-  The README lists the hidden ones in a <details> under each card pair (images are not clickable).
+- card-*.svg: project cards; every tech pill shown, wrapping onto more rows (never overflowing).
 
 Shooting stars each get their own random duration and delay, so the pattern looks random.
 GitHub renders README SVGs as images: CSS animations work, scripts do not.
 
-usage: python3 assets/gen_space.py   (writes into assets/, saves the overflow lists to card-overflow.json)
+usage: python3 assets/gen_space.py   (writes into assets/)
 """
-import json, math, os, random
+import math, os, random
 
 OUT = os.path.dirname(os.path.abspath(__file__))
 BG = "#0d1117"
@@ -21,6 +20,38 @@ INK = "#f0f3f6"
 MUTED = "#8b949e"
 LINE = "#30363d"
 PILL = "#161b22"
+A1, A2 = "#a371f7", "#58a6ff"   # accent gradient: purple -> blue
+
+# brand colours for pills; anything unknown falls back to a stable palette colour
+BRAND = {
+    "java": "#f89820", "javascript": "#f7df1e", "typescript": "#3178c6", "sql": "#4ea8de", "react": "#61dafb",
+    "react.js": "#61dafb", "react 19": "#61dafb", "react native": "#61dafb", "next.js": "#e6edf3", "next.js 15": "#e6edf3",
+    "tailwind css": "#38bdf8", "tailwind css 4": "#38bdf8", "node.js": "#5fa04e", "express": "#c9d1d9", "express.js": "#c9d1d9",
+    "express 5": "#c9d1d9", "rest apis": "#58a6ff", "jwt": "#d63aff", "jwt authentication": "#d63aff", "mongodb": "#47a248",
+    "mongoose": "#880000", "mysql": "#4479a1", "mariadb": "#c0765a", "postgresql": "#4169e1", "redis": "#ff4438",
+    "git": "#f05032", "docker": "#2496ed", "docker compose": "#2496ed", "nginx": "#009639", "k6": "#7d64ff",
+    "github actions": "#2088ff", "authentication": "#a371f7", "authorization": "#a371f7", "rbac": "#a371f7",
+    "caching": "#a371f7", "rate limiting": "#a371f7", "vite": "#9f7aea", "laravel": "#ff2d20", "laravel 12": "#ff2d20",
+    "php": "#777bb4", "alpine.js": "#8bc0d0", "spring boot": "#6db33f", "spring security": "#6db33f", "socket.io": "#c9d1d9",
+    "razorpay": "#3395ff", "stripe checkout": "#635bff", "bullmq": "#e0234e", "expo": "#c9d1d9", "framer motion": "#e535ab",
+    "postgres": "#4169e1", "minio": "#c72e49", "ffmpeg": "#5cb85c", "bash": "#4eaa25", "apache": "#d22128",
+    "chart.js": "#ff6384", "playwright": "#2ead33", "eslint": "#8080f2", "prettier": "#f7b93e", "sentry": "#a971d6",
+    "cloudflare": "#f38020", "composer": "#c9a26b", "phpunit": "#3c9cd7", "axios": "#5a29e4", "zustand": "#c4935f",
+    "recharts": "#22b5bf", "nodemailer": "#22b573", "tanstack query": "#ff4154", "react flow": "#ff0072",
+}
+FALLBACK = ["#a371f7", "#58a6ff", "#3fb950", "#d29922", "#db61a2", "#39c5cf", "#f0883e", "#8b949e"]
+
+
+def brand(label):
+    k = label.lower()
+    if k in BRAND:
+        return BRAND[k]
+    return FALLBACK[sum(map(ord, k)) % len(FALLBACK)]
+
+
+def accent_defs(p):
+    return (f'<linearGradient id="{p}ac" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="{A1}"/>'
+            f'<stop offset="1" stop-color="{A2}"/></linearGradient>')
 MONO = "'SFMono-Regular','JetBrains Mono','Fira Code',Menlo,Consolas,'Liberation Mono',monospace"
 SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif"
 CW = 0.6  # monospace advance (em); textLength pins text to n * CW * size
@@ -91,7 +122,12 @@ def sky_svg(w, h, p, rng, nstars, nshoot, fg_css, fg):
     c2, e2 = shooting(rng, w, h, nshoot, p)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}">'
             f'<defs>{fade_masks(p, w, h)}</defs><style>{"".join(c1 + c2 + fg_css)}</style>'
+            f'<defs>{accent_defs(p)}<radialGradient id="{p}n1"><stop offset="0" stop-color="{A1}" stop-opacity="0.16"/>'
+            f'<stop offset="1" stop-color="{A1}" stop-opacity="0"/></radialGradient><radialGradient id="{p}n2">'
+            f'<stop offset="0" stop-color="{A2}" stop-opacity="0.12"/><stop offset="1" stop-color="{A2}" stop-opacity="0"/></radialGradient></defs>'
             f'<g mask="url(#{p}mx)"><g mask="url(#{p}my)"><rect width="{w}" height="{h}" fill="{BG}"/>'
+            f'<ellipse cx="{w*0.3:.0f}" cy="{h*0.5:.0f}" rx="{w*0.3:.0f}" ry="{h*0.8:.0f}" fill="url(#{p}n1)"/>'
+            f'<ellipse cx="{w*0.72:.0f}" cy="{h*0.45:.0f}" rx="{w*0.28:.0f}" ry="{h*0.75:.0f}" fill="url(#{p}n2)"/>'
             f'{"".join(e1)}{"".join(e2)}</g></g>{fg}</svg>')
 
 
@@ -101,8 +137,8 @@ def plain_svg(w, h, css, body):
 
 
 def fading_line(p, x, y, length, opacity=0.5):
-    return (f'<defs><linearGradient id="{p}ln" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
-            f'<stop offset="0.5" stop-color="#fff" stop-opacity="{opacity}"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>'
+    return (f'<defs><linearGradient id="{p}ln" x1="0" x2="1"><stop offset="0" stop-color="{A1}" stop-opacity="0"/>'
+            f'<stop offset="0.5" stop-color="{A1}" stop-opacity="{opacity}"/><stop offset="1" stop-color="{A2}" stop-opacity="0"/>'
             f'</linearGradient></defs><rect x="{x}" y="{y}" width="{length}" height="1" fill="url(#{p}ln)"/>')
 
 
@@ -135,9 +171,9 @@ def typed_line(p, key, text, size, cx, y, fill, font, weight, slot=None, period=
                f".{k}m{{animation:{k}m {dur:.2f}s steps({n},end) {delay:.2f}s both}}")
     body = (f'<clipPath id="{k}clip"><rect class="{k}c" x="{x0:.1f}" y="{y - size:.1f}" height="{size * 1.4:.1f}" width="0"/></clipPath>'
             f'<text clip-path="url(#{k}clip)" x="{x0:.1f}" y="{y}" textLength="{tw:.1f}" lengthAdjust="spacingAndGlyphs" '
-            f'font-family="{font}" font-size="{size}" font-weight="{weight}" fill="{fill}">{esc(text)}</text>'
+            f'font-family="{font}" font-size="{size}" font-weight="{weight}" fill="{"url(#" + p + "ac)" if fill == "accent" else fill}">{esc(text)}</text>'
             f'<g class="{k}m"><g class="{k}v"><rect class="{p}blink" x="{x0 + 2:.1f}" y="{y - size * 0.85:.1f}" '
-            f'width="{max(2, size * 0.07):.1f}" height="{size:.1f}" fill="{fill}"/></g></g>')
+            f'width="{max(2, size * 0.07):.1f}" height="{size:.1f}" fill="{A2 if fill == "accent" else fill}"/></g></g>')
     return css, body
 
 
@@ -148,37 +184,41 @@ def banner():
     period = 4.6 * len(lines)
     css, fg = [BLINK.format(p=p)], []
     for i, t in enumerate(lines):
-        c, b = typed_line(p, f"l{i}", t, 32, 500, 132, INK, MONO, 600, (i / 3, (i + 1) / 3), period)
+        c, b = typed_line(p, f"l{i}", t, 32, 500, 132, "accent", MONO, 600, (i / 3, (i + 1) / 3), period)
         css.append(c); fg.append(b)
     open(os.path.join(OUT, "space-banner.svg"), "w").write(sky_svg(w, h, p, rng, 200, 8, css, "".join(fg)))
 
 
 def footer():
     rng = random.Random(77); p = "f"; w, h = 1000, 200
-    c, b = typed_line(p, "q", "Always learning. Always building. Always improving.", 22, 500, 92, INK, MONO, 500)
+    c, b = typed_line(p, "q", "Always learning. Always building. Always improving.", 22, 500, 92, "accent", MONO, 600)
     fade = f"@keyframes {p}fd{{from{{opacity:0}}to{{opacity:1}}}}.{p}fade{{opacity:0;animation:{p}fd 1.2s ease 4s forwards}}"
     fg = (b + f'<text class="{p}fade" x="500" y="130" text-anchor="middle" font-family="{SANS}" font-style="italic" '
-              f'font-size="15" fill="{MUTED}">"Turning ideas into scalable software."</text>')
+              f'font-size="15" fill="#c9b6ff">"Turning ideas into scalable software."</text>')
     open(os.path.join(OUT, "space-footer.svg"), "w").write(sky_svg(w, h, p, rng, 150, 6, [c, BLINK.format(p=p), fade], fg))
 
 
 def title(name, text, seed):
     p = f"t{seed}"; w, h = 1000, 80
-    c, b = typed_line(p, "h", text, 22, 500, 44, INK, MONO, 600)
-    body = b + fading_line(p, 300, 66, 400, 0.35)
+    c, b = typed_line(p, "h", text, 24, 500, 44, "accent", MONO, 700)
+    body = f"<defs>{accent_defs(p)}</defs>" + b + fading_line(p, 300, 66, 400, 0.6)
     open(os.path.join(OUT, f"title-{name}.svg"), "w").write(plain_svg(w, h, [c, BLINK.format(p=p)], body))
 
 
 def divider():
     w, h = 1000, 24
-    open(os.path.join(OUT, "divider.svg"), "w").write(plain_svg(w, h, [], fading_line("d", 100, 12, 800, 0.28)))
+    open(os.path.join(OUT, "divider.svg"), "w").write(plain_svg(w, h, [], fading_line("d", 100, 12, 800, 0.5)))
 
 
-def pill(x, y, label, size=12, padx=11, hgt=26):
+def pill(x, y, label, size=12, padx=11, hgt=26, dot=True):
+    col = brand(label)
     tw = len(label) * CW * size
-    pw = tw + 2 * padx
-    return pw, (f'<g transform="translate({x:.1f},{y:.1f})"><rect width="{pw:.1f}" height="{hgt}" rx="{hgt / 2}" fill="{PILL}" '
-                f'stroke="{LINE}"/><text x="{padx}" y="{hgt / 2 + size * 0.36:.1f}" textLength="{tw:.1f}" lengthAdjust="spacingAndGlyphs" '
+    lead = (hgt * 0.5 + 6) if dot else padx
+    pw = lead + tw + padx
+    d = f'<circle cx="{hgt * 0.5:.1f}" cy="{hgt / 2}" r="{size * 0.3:.1f}" fill="{col}"/>' if dot else ""
+    return pw, (f'<g transform="translate({x:.1f},{y:.1f})"><rect x="0.5" y="0.5" width="{pw - 1:.1f}" height="{hgt - 1}" rx="{(hgt - 1) / 2}" '
+                f'fill="{col}" fill-opacity="0.12" stroke="{col}" stroke-opacity="0.55"/>{d}'
+                f'<text x="{lead:.1f}" y="{hgt / 2 + size * 0.36:.1f}" textLength="{tw:.1f}" lengthAdjust="spacingAndGlyphs" '
                 f'font-family="{MONO}" font-size="{size}" fill="#e6edf3">{esc(label)}</text></g>')
 
 
@@ -198,13 +238,13 @@ def tech_stack():
     els = []
     for i, (cat, items) in enumerate(STACK):
         y = top + i * rowh
-        els.append(f'<text x="120" y="{y + 18}" font-family="{SANS}" font-size="13" font-weight="600" fill="{MUTED}" '
-                   f'letter-spacing="1">{esc(cat.upper())}</text>')
+        els.append(f'<text x="120" y="{y + 18}" font-family="{SANS}" font-size="13" font-weight="700" fill="url(#tsac)" '
+                   f'letter-spacing="1" fill-opacity="1">{esc(cat.upper())}</text>')
         x = 300
         for it in items:
             pw, g = pill(x, y, it)
             els.append(g); x += pw + 8
-    open(os.path.join(OUT, "tech-stack.svg"), "w").write(plain_svg(w, h, [], "".join(els)))
+    open(os.path.join(OUT, "tech-stack.svg"), "w").write(plain_svg(w, h, [], f"<defs>{accent_defs('ts')}</defs>" + "".join(els)))
 
 
 # Tech lists are the portfolio's verified ones (My-Portfolio/client/src/data/projects.js), main ones first.
@@ -252,41 +292,62 @@ def wrap(text, maxc):
     return lines + [cur]
 
 
-def card(key, name, sub, desc, techs):
-    """Writes card-<key>.svg and returns the tech that did not fit (shown as "+N" on the card)."""
-    w, h, pad, gap, y = 500, 300, 28, 6, 252
-    lines = wrap(desc, 58)[:6]
-    txt = "".join(f'<text x="{pad}" y="{110 + i * 21}" font-family="{SANS}" font-size="14" fill="#c9d1d9">{esc(l)}</text>'
-                  for i, l in enumerate(lines))
-    right = w - pad
-    shown, x = [], pad
-    for i, t in enumerate(techs):
+CARD_W, PAD, PGAP, PROW = 500, 28, 6, 30
+
+
+def layout_pills(techs):
+    rows, x = [[]], PAD
+    for t in techs:
         pw = pill(0, 0, t, 11, 9, 24)[0]
-        rest = len(techs) - i - 1
-        more_w = gap + pill(0, 0, f"+{rest}", 11, 9, 24)[0] if rest else 0
-        if x + pw + more_w > right:
-            break
-        shown.append(pill(x, y, t, 11, 9, 24)[1]); x += pw + gap
-    hidden = techs[len(shown):]
-    if hidden:
-        shown.append(pill(x, y, f"+{len(hidden)}", 11, 9, 24)[1].replace(f'fill="{PILL}"', 'fill="#21262d"'))
-    body = (f'<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" fill="{BG}" stroke="{LINE}"/>'
-            f'<text x="{pad}" y="52" font-family="{SANS}" font-size="20" font-weight="700" fill="{INK}">{esc(name)}</text>'
-            f'<text x="{pad}" y="78" font-family="{SANS}" font-size="11" font-weight="600" letter-spacing="1.5" fill="{MUTED}">{esc(sub)}</text>'
-            f'{txt}{"".join(shown)}')
+        if x + pw > CARD_W - PAD and rows[-1]:
+            rows.append([]); x = PAD
+        rows[-1].append((x, t)); x += pw + PGAP
+    return rows
+
+
+def card_height(desc, techs):
+    return 110 + len(wrap(desc, 58)) * 21 + 14 + len(layout_pills(techs)) * PROW + 18
+
+
+def card(key, name, sub, desc, techs, h, seed):
+    w = CARD_W; p = f"c{seed}"
+    rng = random.Random(seed)
+    lines = wrap(desc, 58)
+    txt = "".join(f'<text x="{PAD}" y="{110 + i * 21}" font-family="{SANS}" font-size="14" fill="#c9d1d9">{esc(l)}</text>'
+                  for i, l in enumerate(lines))
+    y0 = 110 + len(lines) * 21 + 6
+    pills = "".join(pill(x, y0 + r * PROW, t, 11, 9, 24)[1] for r, row in enumerate(layout_pills(techs)) for x, t in row)
+    gx, gy = rng.uniform(0.65, 0.95) * w, rng.uniform(0.0, 0.25) * h
+    defs = (f'<defs>{accent_defs(p)}<pattern id="{p}dots" width="16" height="16" patternUnits="userSpaceOnUse">'
+            f'<circle cx="2" cy="2" r="0.9" fill="#ffffff" fill-opacity="0.07"/></pattern>'
+            f'<radialGradient id="{p}glow"><stop offset="0" stop-color="{A1}" stop-opacity="0.22"/>'
+            f'<stop offset="0.5" stop-color="{A2}" stop-opacity="0.07"/><stop offset="1" stop-color="{A2}" stop-opacity="0"/></radialGradient>'
+            f'<linearGradient id="{p}bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{A1}" stop-opacity="0.7"/>'
+            f'<stop offset="0.45" stop-color="{LINE}"/><stop offset="1" stop-color="{A2}" stop-opacity="0.5"/></linearGradient>'
+            f'<clipPath id="{p}cl"><rect width="{w}" height="{h}" rx="14"/></clipPath></defs>')
+    body = (defs + f'<g clip-path="url(#{p}cl)"><rect width="{w}" height="{h}" fill="{BG}"/>'
+            f'<rect width="{w}" height="{h}" fill="url(#{p}dots)"/>'
+            f'<circle cx="{gx:.0f}" cy="{gy:.0f}" r="{w * 0.55:.0f}" fill="url(#{p}glow)"/>'
+            f'<rect x="0" y="0" width="{w}" height="3" fill="url(#{p}ac)"/></g>'
+            f'<rect x="0.75" y="0.75" width="{w - 1.5}" height="{h - 1.5}" rx="14" fill="none" stroke="url(#{p}bd)" stroke-width="1.5"/>'
+            f'<text x="{PAD}" y="50" font-family="{SANS}" font-size="20" font-weight="700" fill="{INK}">{esc(name)}</text>'
+            f'<text x="{PAD}" y="76" font-family="{SANS}" font-size="11" font-weight="700" letter-spacing="1.5" fill="url(#{p}ac)">{esc(sub)}</text>'
+            f'{txt}{pills}')
     open(os.path.join(OUT, f"card-{key}.svg"), "w").write(plain_svg(w, h, [], body))
-    return hidden
 
 
 if __name__ == "__main__":
     for f in os.listdir(OUT):
-        if f.startswith(("divider-", "title-", "card-")) and f.endswith(".svg"):
+        if f.startswith(("divider-", "title-", "card-")) and f.endswith((".svg", ".json")):
             os.remove(os.path.join(OUT, f))
     banner(); footer(); divider(); tech_stack()
     for n, (k, t) in enumerate([("about", "WHO AM I?"), ("stack", "TECH STACK"), ("stats", "GITHUB STATS"),
                                 ("projects", "FEATURED PROJECTS")]):
         title(k, t, 20 + n)
-    overflow = {pr[0]: card(*pr) for pr in PROJECTS}
-    with open(os.path.join(OUT, "card-overflow.json"), "w") as fh:
-        json.dump(overflow, fh, indent=1)
-    print({k: len(v) for k, v in overflow.items()})
+    # cards sit two per row: give both cards in a row the same height
+    heights = [card_height(pr[3], pr[4]) for pr in PROJECTS]
+    for i, pr in enumerate(PROJECTS):
+        j = i - i % 2
+        hh = max(heights[j:j + 2])
+        card(*pr, h=hh, seed=300 + i)
+    print("ok", heights)
