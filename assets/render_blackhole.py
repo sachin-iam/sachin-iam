@@ -109,9 +109,12 @@ def disk_density(r, th, sim):
     n = turb(r, th, tb) + (turb(r, th, ta) - turb(r, th, tb)) * wa
     return np.clip(0.28 + 2.3*(n - 0.6), 0.03, 1.7)
 
-def disk_sample(r, th, lam, sim):
+def disk_sample(r, th, lam, sim, flare=0.0):
     g = disk_g(r, lam, DIST)
     flux = disk_flux(r)
+    # overfeeding: the inner disk heats up (same form as the portfolio's uFlare), and the whole disk glows wider
+    t9 = np.clip((r - 9.0)/(ISCO - 9.0), 0, 1)
+    flux = flux*(1 + flare*3.0*t9*t9*(3 - 2*t9))*(1 + 0.6*flare)
     dens = disk_density(r, th, sim)
     def ss(e0, e1, x):
         t = np.clip((x - e0)/(e1 - e0), 0, 1); return t*t*(3 - 2*t)
@@ -245,24 +248,156 @@ def trace():
     # rays still running at MAXSTEPS: treat as escaped along the current direction
     escaped[idx] = True
     st = starfield(w, h).reshape(-1, 3)
-    return dict(r=cr_r, th=cr_th, lam=lam, corona=corona, n=ncross, escaped=escaped, stars=st, w=w, h=h)
+    return dict(r=cr_r, th=cr_th, lam=lam, corona=corona, n=ncross, escaped=escaped, stars=st, w=w, h=h,
+                cam=cam, fwd=fwd, right=right, up=up, tanh=th)
 
 G = None
+# ---------------- story: feed -> overfeed -> burst (flash, shock, twin jets) -> calm ----------------
+def sstep(e0, e1, x):
+    t = np.clip((x - e0)/(e1 - e0), 0, 1); return t*t*(3 - 2*t)
+
+# timeline (same beats as the original blackhole.svg, 10 s loop):
+#   0.00-0.40 feeding: clumps fall in from every side, a big star is tidally stretched and swallowed at 0.40
+#   0.40-0.56 overfed: the hole goes white, twin gamma-ray jets fire up and down, debris is thrown out
+#   0.56-1.00 settles back to calm while feeding resumes
+PB, PE = 0.40, 0.56
+def flare_level(p):
+    up = sstep(0.05, PB, p)
+    down = np.where(p < PE, 1.0, np.exp(-(p - PE)/0.05))
+    return float(up*down*sstep(1.0, 0.92, p))
+
+def project(P):
+    v = P - G['cam']; z = v @ G['fwd'] if v.ndim == 1 else (v*G['fwd']).sum(-1)
+    xs = (v*G['right']).sum(-1)/z; ys = (v*G['up']).sum(-1)/z
+    th = G['tanh']; w, h = G['w'], G['h']
+    return ((xs/(th*w/h)) + 1)/2*w - 0.5, (1 - ys/th)/2*h - 0.5, z
+
+def splat(img, x, y, sig, rgb):
+    h, w, _ = img.shape
+    R = int(math.ceil(3*sig)) + 1
+    x0, x1 = max(int(x) - R, 0), min(int(x) + R + 1, w)
+    y0, y1 = max(int(y) - R, 0), min(int(y) + R + 1, h)
+    if x0 >= x1 or y0 >= y1: return
+    yy, xx = np.mgrid[y0:y1, x0:x1]
+    img[y0:y1, x0:x1] += np.exp(-((xx - x)**2 + (yy - y)**2)/(2*sig*sig))[..., None]*np.asarray(rgb)
+
+RNG = np.random.default_rng(5)
+CLUMPS = []
+for i in range(22):
+    if i < 13: p0 = 0.0 + 0.30*i/13 + RNG.uniform(0, 0.02)     # feeding run-up
+    else:      p0 = 0.55 + 0.33*(i - 13)/9 + RNG.uniform(0, 0.02)  # feeding resumes
+    CLUMPS.append(dict(p0=p0, dur=RNG.uniform(0.12, 0.18), r0=RNG.uniform(16, 24), ph0=RNG.uniform(0, 2*math.pi),
+                       y0=RNG.uniform(-7, 7), turns=RNG.uniform(0.5, 0.9), m=RNG.uniform(1.0, 1.8),
+                       col=[(1.0, 0.95, 0.85), (1.0, 0.78, 0.55), (0.85, 0.6, 1.0), (1.0, 0.6, 0.35)][i % 4]))
+STAR = dict(p0=0.02, dur=PB - 0.02, r0=26, ph0=2.3, y0=9, turns=0.55, m=4.0, col=(1.0, 0.97, 0.9))
+DEBRIS = [dict(ang=RNG.uniform(0, 2*math.pi), sp=RNG.uniform(0.6, 1.0), col=[(1, 1, 1), (1, 0.85, 0.7), (0.8, 0.6, 1.0)][i % 3])
+          for i in range(26)]
+
+def clump_pos(c, u):
+    """Inspiral from far out: radius shrinks to the horizon, angle advances faster as it falls."""
+    u = np.clip(u, 0, 1)
+    r = RH + (c['r0'] - RH)*(1 - u)**1.6
+    ph = c['ph0'] + 2*math.pi*c['turns']*(1 - ((r - RH)/(c['r0'] - RH))**0.6)
+    y = c['y0']*((r - RH)/(c['r0'] - RH))**1.2
+    return np.stack([r*np.cos(ph), y, r*np.sin(ph)], -1), r
+
+def draw_body(fx, c, p, trans_img, cx, cy, sh, px, size, ntrail=24):
+    h, w = G['h'], G['w']
+    u = (p - c['p0'])/c['dur']
+    if u <= 0 or u >= 1.03: return
+    us = u - np.linspace(0, 0.16, ntrail)
+    P, r = clump_pos(c, us)
+    X, Y, Z = project(P)
+    for k in range(ntrail):
+        if us[k] < 0: break
+        rr = r[k]
+        heat = np.clip(2.0/(rr - RH*0.95), 0.25, 3.0)
+        fade = np.clip((rr - RH)/0.8, 0, 1)
+        a = c['m']*heat*fade*(1 - k/ntrail)**1.2*0.9*24/ntrail
+        x, y = X[k], Y[k]
+        d = P[k] @ G['fwd']
+        behind = d > 0
+        dx, dy = x - cx, y - cy; b = math.hypot(dx, dy) + 1e-6
+        if behind:
+            thE = math.sqrt(2*d/(DIST*(DIST + d)))/px
+            t = (b + math.sqrt(b*b + 4*thE*thE))/2
+            x, y = cx + dx/b*t, cy + dy/b*t
+            if t < sh*1.02: continue
+        ix, iy = int(np.clip(x, 0, w - 1)), int(np.clip(y, 0, h - 1))
+        occl = trans_img[iy, ix] if behind else 1.0
+        # tidal stretching: the body shrinks across and stretches along the orbit as it falls
+        sig = size*SS*(1 - 0.6*min(u, 1)**2)*(1 - 0.5*k/ntrail)
+        splat(fx, x, y, max(sig, 0.7*SS), np.array(c['col'])*a*occl)
+
+def effects(p, trans_img):
+    h, w = G['h'], G['w']
+    fx = np.zeros((h, w, 3))
+    px = 2*G['tanh']/h
+    sh = (SHADOW_SCH*math.sqrt(1 - 1/DIST)/DIST)/px
+    cx, cy, _ = project(np.zeros(3))
+    pxs = 1/(DIST*px)
+    for c in CLUMPS:
+        draw_body(fx, c, p, trans_img, cx, cy, sh, px, 2.4, ntrail=70)
+    draw_body(fx, STAR, p, trans_img, cx, cy, sh, px, 6.0, ntrail=90)
+    yy, xx = np.mgrid[0:h, 0:w]
+    rr2 = (xx - cx)**2 + (yy - cy)**2
+    # burst envelope: snaps on at PB, holds, releases by PE + 0.03
+    env = sstep(PB - 0.004, PB + 0.02, p)*(1 - sstep(PE - 0.03, PE + 0.03, p))
+    if env > 0:
+        q = p - PB
+        grow = 1 - math.exp(-max(q, 0)/0.03)
+        white = np.array([1.0, 0.98, 0.95])
+        # the hole itself goes white-hot, glow balloons outward (like the original whiteglow 130 -> 280)
+        core = np.exp(-rr2/(2*(sh*0.95)**2))*5.0
+        halo = np.exp(-rr2/(2*(sh*(1.3 + 1.0*grow))**2))*0.45
+        wide = np.exp(-rr2/(2*(sh*(2.6 + 2.0*grow))**2))*0.07
+        fx += (core + halo + wide)[..., None]*white*env
+        # shock shell
+        R = sh*1.2 + w*0.6*grow
+        fx += (np.exp(-((np.sqrt(rr2) - R)/(2*SS + R*0.03))**2)*0.18*(1 - grow*0.7))[..., None]*np.array([0.75, 0.7, 1.0])*env
+        # twin gamma-ray jets along the spin axis, shooting past the frame edges
+        L = 90*grow + 2
+        for sgn in (1, -1):
+            sv = np.linspace(1.0, L, 420)
+            P = np.stack([np.zeros_like(sv), sgn*sv, np.zeros_like(sv)], -1)
+            X, Y, Z = project(P)
+            for k in range(len(sv)):
+                s_ = sv[k]; x, y = X[k], Y[k]
+                if not (-60 < x < w + 60 and -60 < y < h + 60): continue
+                knots = 1 + 1.4*math.exp(-(((s_ - 160*q) % 22) - 11)**2/6.0)
+                base = env*math.exp(-s_/90)*knots*0.07
+                wid = (0.3 + 0.025*s_)*pxs
+                splat(fx, x, y, max(wid*0.3, 1.0*SS), np.array([0.9, 0.95, 1.0])*base*2.2)
+                splat(fx, x, y, max(wid, 2.0*SS), np.array([0.62, 0.78, 1.0])*base*0.45)
+        # debris thrown out in every direction
+        for dbr in DEBRIS:
+            dist_ = (sh*1.3 + w*0.55*dbr['sp']*grow)
+            x = cx + math.cos(dbr['ang'])*dist_; y = cy + math.sin(dbr['ang'])*dist_*0.75
+            fade = max(1 - grow*1.1, 0)
+            for k in range(6):
+                t = dist_ - k*4*SS
+                splat(fx, cx + math.cos(dbr['ang'])*t, cy + math.sin(dbr['ang'])*t*0.75, 1.3*SS,
+                      np.array(dbr['col'])*1.4*fade*env*(1 - k/6))
+    return fx
+
 def frame(fi):
-    sim = 30.0*fi/FRAMES
+    p = fi/FRAMES
+    sim = 60.0*p
+    fl = flare_level(p)
     r, th, lam, corona = G['r'], G['th'], G['lam'], G['corona']
     N = r.shape[0]
     acc = np.zeros((N, 3)); trans = np.ones(N)
     for k in range(KMAX + 1):
-        acc += trans[:, None]*np.array([0.75, 0.82, 1.0])*corona[:, k][:, None]
+        acc += trans[:, None]*np.array([0.75, 0.82, 1.0])*corona[:, k][:, None]*(1 + 4*fl)
         if k == KMAX: break
         m = ~np.isnan(r[:, k])
         if not m.any(): continue
-        rgb, a = disk_sample(r[m, k], th[m, k], lam[m], sim)
+        rgb, a = disk_sample(r[m, k], th[m, k], lam[m], sim, fl)
         acc[m] += trans[m][:, None]*rgb
         trans[m] *= 1 - a
     esc = G['escaped']
     c = acc + G['stars']*trans[:, None]
+    c = c + effects(p, trans.reshape(G['h'], G['w'])).reshape(-1, 3)
     col = 1 - np.exp(-c*EXPOSURE) + np.where(esc[:, None], BG*trans[:, None], 0)
     img = np.clip(col, 0, 1).reshape(G['h'], G['w'], 3)
     im = Image.fromarray((img*255 + np.random.default_rng(fi).uniform(-0.5, 0.5, img.shape)).clip(0, 255).astype(np.uint8))
@@ -278,5 +413,7 @@ if __name__ == "__main__":
     import time; t0 = time.time()
     g = trace(); print("traced", round(time.time() - t0, 1), "s", flush=True)
     with Pool(os.cpu_count(), initializer=init, initargs=(g,)) as pool:
-        for _ in pool.imap_unordered(frame, range(FRAMES)): pass
+        ONLY = os.environ.get('ONLY')
+        todo = [int(x) for x in ONLY.split(',')] if ONLY else range(FRAMES)
+        for _ in pool.imap_unordered(frame, todo): pass
     print("frames", round(time.time() - t0, 1), "s")
