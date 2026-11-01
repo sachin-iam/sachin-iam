@@ -11,7 +11,7 @@ import math, os, random
 
 OUT = os.path.dirname(os.path.abspath(__file__))
 BG = "#0d1117"
-PURPLE = "#7A18F5"
+PURPLE = "#c9d1d9"  # accent, kept neutral
 
 
 def starfield(rng, w, h, n, prefix):
@@ -20,7 +20,7 @@ def starfield(rng, w, h, n, prefix):
         x, y = rng.uniform(0, w), rng.uniform(0, h)
         big = rng.random() < 0.12
         r = rng.uniform(0.9, 1.6) if big else rng.uniform(0.3, 0.9)
-        col = rng.choice(["#ffffff", "#dfe7ff", "#cdd9ff", "#ffe9d6", "#e9dcff"])
+        col = rng.choice(["#ffffff", "#f0f3f6", "#e6edf3", "#dfe4ea"])
         lo, hi = rng.uniform(0.15, 0.45), rng.uniform(0.7, 1.0)
         d, delay = rng.uniform(2.2, 7.5), rng.uniform(0, 8)
         name = f"{prefix}tw{i}"
@@ -58,7 +58,7 @@ def shooting(rng, w, h, n, prefix):
             f".{name}o{{opacity:0;animation:{name}o {period:.2f}s linear {-delay:.2f}s infinite}}")
         els.append(
             f'<linearGradient id="{name}g" gradientUnits="userSpaceOnUse" x1="{-length:.0f}" y1="0" x2="0" y2="0">'
-            f'<stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.75" stop-color="#cdbbff" stop-opacity="0.55"/>'
+            f'<stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.75" stop-color="#dfe6ee" stop-opacity="0.55"/>'
             f'<stop offset="1" stop-color="#fff"/></linearGradient>'
             f'<g class="{name}"><g class="{name}o"><path d="M{-length:.0f},0 L0,-1.3 L1.5,0 L0,1.3 Z" fill="url(#{name}g)"/>'
             f'<circle r="2.6" fill="#fff" opacity="0.35"/><circle r="1.3" fill="#fff"/></g></g>')
@@ -67,15 +67,15 @@ def shooting(rng, w, h, n, prefix):
 
 def defs(prefix):
     return (f'<defs><linearGradient id="{prefix}tail" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
-            f'<stop offset="0.7" stop-color="#cdbbff" stop-opacity="0.5"/><stop offset="1" stop-color="#fff"/></linearGradient>'
+            f'<stop offset="0.7" stop-color="#dfe6ee" stop-opacity="0.5"/><stop offset="1" stop-color="#fff"/></linearGradient>'
             f'<filter id="{prefix}glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="1.6"/></filter>'
-            f'<radialGradient id="{prefix}neb1" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="{PURPLE}" stop-opacity="0.22"/>'
-            f'<stop offset="1" stop-color="{PURPLE}" stop-opacity="0"/></radialGradient>'
-            f'<radialGradient id="{prefix}neb2" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ff8a3d" stop-opacity="0.10"/>'
-            f'<stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/></radialGradient>'
-            f'<linearGradient id="{prefix}line" x1="0" x2="1"><stop offset="0" stop-color="#ff8a3d" stop-opacity="0"/>'
-            f'<stop offset="0.3" stop-color="#ff8a3d" stop-opacity="0.6"/><stop offset="0.6" stop-color="{PURPLE}"/>'
-            f'<stop offset="1" stop-color="{PURPLE}" stop-opacity="0"/></linearGradient></defs>')
+            f'<radialGradient id="{prefix}neb1" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#8b949e" stop-opacity="0.07"/>'
+            f'<stop offset="1" stop-color="#8b949e" stop-opacity="0"/></radialGradient>'
+            f'<radialGradient id="{prefix}neb2" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#6e7681" stop-opacity="0.05"/>'
+            f'<stop offset="1" stop-color="#6e7681" stop-opacity="0"/></radialGradient>'
+            f'<linearGradient id="{prefix}line" x1="0" x2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/>'
+            f'<stop offset="0.5" stop-color="#ffffff" stop-opacity="0.55"/>'
+            f'<stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient></defs>')
 
 
 def svg(w, h, body, css, prefix, extra_css=""):
@@ -128,7 +128,7 @@ def typed_line(key, text, size, cx, y, fill, slot0, slot1, period, prefix, loop=
     els = (f'<clipPath id="{k}clip"><rect class="{k}c" x="{x0:.1f}" y="{y - size:.1f}" height="{size*1.4:.1f}" width="0"/></clipPath>'
            f'<g clip-path="url(#{k}clip)">'
            f'<text x="{x0:.1f}" y="{y}" textLength="{tw:.1f}" lengthAdjust="spacingAndGlyphs" font-family="{{font}}" '
-           f'font-size="{size}" font-weight="700" fill="{fill}" filter="url(#{prefix}glow)" opacity="0.75">{text}</text>'
+           f'font-size="{size}" font-weight="700" fill="{fill}" filter="url(#{prefix}glow)" opacity="0.35">{text}</text>'
            f'<text x="{x0:.1f}" y="{y}" textLength="{tw:.1f}" lengthAdjust="spacingAndGlyphs" font-family="{{font}}" '
            f'font-size="{size}" font-weight="700" fill="{fill}">{text}</text></g>'
            f'<g class="{k}m"><g class="{k}v"><rect class="{prefix}blink" x="{x0 + 2:.1f}" y="{y - size*0.85:.1f}" width="{max(2, size*0.08):.1f}" '
@@ -148,7 +148,7 @@ def banner():
     period = 4.6 * len(lines)
     tc, te = [], []
     for i, t in enumerate(lines):
-        c, e = typed_line(f"l{i}", t, 34, 500, 145, "#9b5cff", i / len(lines), (i + 1) / len(lines), period, p)
+        c, e = typed_line(f"l{i}", t, 34, 500, 145, "#f0f3f6", i / len(lines), (i + 1) / len(lines), period, p)
         tc.append(c); te.append(e.replace("{font}", HEAD_FONT))
     body = nebula(rng, w, h, p, 3) + "".join(e1) + "".join(e2) + "".join(te)
     open(os.path.join(OUT, "space-banner.svg"), "w").write(svg(w, h, body, c1 + c2 + tc + [BLINK.format(p=p)], p))
@@ -159,7 +159,7 @@ def title(name, text, seed):
     c1, e1 = starfield(rng, w, h, 110, p)
     c2, e2 = shooting(rng, w, h, 4, p)
     # typed once (like the old repeat=false typing titles), cursor keeps blinking
-    c, e = typed_line("h", text, 34, 500, 80, "#9b5cff", 0, 1, 0.3, p, loop=False)
+    c, e = typed_line("h", text, 34, 500, 80, "#f0f3f6", 0, 1, 0.3, p, loop=False)
     body = (nebula(rng, w, h, p, 2) + "".join(e1) + "".join(e2)
             + f'<rect x="60" y="117.4" width="880" height="1.2" fill="url(#{p}line)"/>'
             + e.replace("{font}", TITLE_FONT))
@@ -172,7 +172,7 @@ def divider(i):
     c2, e2 = shooting(rng, w, h, 3, p)
     body = (nebula(rng, w, h, p, 1) + "".join(e1) + "".join(e2)
             + f'<rect x="40" y="{h/2 - 0.65}" width="920" height="1.3" fill="url(#{p}line)"/>'
-            + f'<circle class="{p}pulse" cy="{h/2}" r="2.4" fill="#e9dcff" filter="url(#{p}glow)"/>')
+            + f'<circle class="{p}pulse" cy="{h/2}" r="2.4" fill="#ffffff" filter="url(#{p}glow)"/>')
     pulse = (f"@keyframes {p}pm{{0%{{transform:translateX(60px)}}100%{{transform:translateX(940px)}}}}"
              f".{p}pulse{{animation:{p}pm {rng.uniform(7, 12):.2f}s linear {-rng.uniform(0, 8):.2f}s infinite}}")
     open(os.path.join(OUT, f"divider-{i}.svg"), "w").write(svg(w, h, body, c1 + c2, p, pulse))
@@ -244,14 +244,14 @@ def card(key, emoji, name, sub, desc, chips, seed):
                         f'font-weight="600" fill="#e6edf3">{esc(label)}</text></g>')
         cx += cw + 7
     border = (f'<linearGradient id="{p}bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{PURPLE}"/>'
-              f'<stop offset="0.5" stop-color="#30363d"/><stop offset="1" stop-color="#ff8a3d" stop-opacity="0.7"/></linearGradient>')
+              f'<stop offset="0.5" stop-color="#30363d"/><stop offset="1" stop-color="#6e7681" stop-opacity="0.8"/></linearGradient>')
     glow = (f"@keyframes {p}gl{{0%,100%{{opacity:0.55}}50%{{opacity:1}}}}.{p}gl{{animation:{p}gl {rng.uniform(4, 6):.1f}s ease-in-out infinite}}")
     body = (f'<defs>{border}<clipPath id="{p}cl"><rect x="1" y="1" width="{w-2}" height="{h-2}" rx="16"/></clipPath></defs>'
             f'<g clip-path="url(#{p}cl)">{nebula(rng, w, h, p, 2)}{"".join(e1)}{"".join(e2)}</g>'
             f'<rect class="{p}gl" x="1" y="1" width="{w-2}" height="{h-2}" rx="16" fill="none" stroke="url(#{p}bd)" stroke-width="2"/>'
             f'<text x="28" y="56" font-size="26">{emoji}</text>'
-            f'<text x="66" y="54" font-family="{SANS}" font-size="21" font-weight="700" fill="#f0e8ff">{esc(name)}</text>'
-            f'<text x="28" y="86" font-family="{SANS}" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#a374ff">{esc(sub)}</text>'
+            f'<text x="66" y="54" font-family="{SANS}" font-size="21" font-weight="700" fill="#ffffff">{esc(name)}</text>'
+            f'<text x="28" y="86" font-family="{SANS}" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#8b949e">{esc(sub)}</text>'
             f'<rect x="28" y="97" width="60" height="2" rx="1" fill="{PURPLE}"/>'
             f'{txt}<g transform="translate(28,0) scale({min(1, (w - 56)/(cx - 7 - 28)):.3f},1) translate(-28,0)">{"".join(chip_els)}</g>')
     s = svg(w, h, body, c1 + c2 + [glow], p).replace(f'<rect width="{w}" height="{h}" fill="{BG}"/>',
@@ -263,9 +263,9 @@ def footer():
     rng = random.Random(77); p = "f"; w, h = 1000, 230
     c1, e1 = starfield(rng, w, h, 180, p)
     c2, e2 = shooting(rng, w, h, 7, p)
-    c, e = typed_line("q", "Always learning. Always building. Always improving.", 26, 500, 95, "#9b5cff", 0, 1, 0.4, p, loop=False)
+    c, e = typed_line("q", "Always learning. Always building. Always improving.", 26, 500, 95, "#f0f3f6", 0, 1, 0.4, p, loop=False)
     body = (nebula(rng, w, h, p, 3) + "".join(e1) + "".join(e2) + e.replace("{font}", HEAD_FONT)
-            + f'<text class="{p}fade" x="500" y="140" text-anchor="middle" font-family="{SANS}" font-style="italic" font-size="17" fill="#c9b6ff">'
+            + f'<text class="{p}fade" x="500" y="140" text-anchor="middle" font-family="{SANS}" font-style="italic" font-size="17" fill="#8b949e">'
               f'"Turning ideas into scalable software."</text>'
             + f'<rect x="200" y="175" width="600" height="1.2" fill="url(#{p}line)"/>'
             + f'<text class="{p}fade" x="500" y="205" text-anchor="middle" font-family="{SANS}" font-size="13" letter-spacing="3" fill="#8b949e">'
