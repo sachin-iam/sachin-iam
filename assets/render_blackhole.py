@@ -288,9 +288,10 @@ for i in range(22):
     else:      p0 = 0.55 + 0.33*(i - 13)/9 + RNG.uniform(0, 0.02)  # feeding resumes
     CLUMPS.append(dict(p0=p0, dur=RNG.uniform(0.12, 0.18), r0=RNG.uniform(16, 24), ph0=RNG.uniform(0, 2*math.pi),
                        y0=RNG.uniform(-7, 7), turns=RNG.uniform(0.5, 0.9), m=RNG.uniform(1.0, 1.8),
-                       col=[(1.0, 0.95, 0.85), (1.0, 0.78, 0.55), (0.85, 0.6, 1.0), (1.0, 0.6, 0.35)][i % 4]))
+                       col=[(1.0, 1.0, 1.0), (0.95, 0.95, 0.95), (0.9, 0.92, 0.95), (1.0, 0.97, 0.94)][i % 4]))
+SAT = float(os.environ.get('SAT', 0.3))
 STAR = dict(p0=0.02, dur=PB - 0.02, r0=26, ph0=2.3, y0=9, turns=0.55, m=4.0, col=(1.0, 0.97, 0.9))
-DEBRIS = [dict(ang=RNG.uniform(0, 2*math.pi), sp=RNG.uniform(0.6, 1.0), col=[(1, 1, 1), (1, 0.85, 0.7), (0.8, 0.6, 1.0)][i % 3])
+DEBRIS = [dict(ang=RNG.uniform(0, 2*math.pi), sp=RNG.uniform(0.6, 1.0), col=[(1, 1, 1), (0.92, 0.92, 0.92), (0.85, 0.87, 0.9)][i % 3])
           for i in range(26)]
 
 def clump_pos(c, u):
@@ -354,7 +355,7 @@ def effects(p, trans_img):
         fx += (core + halo + wide)[..., None]*white*env
         # shock shell
         R = sh*1.2 + w*0.6*grow
-        fx += (np.exp(-((np.sqrt(rr2) - R)/(2*SS + R*0.03))**2)*0.18*(1 - grow*0.7))[..., None]*np.array([0.75, 0.7, 1.0])*env
+        fx += (np.exp(-((np.sqrt(rr2) - R)/(2*SS + R*0.03))**2)*0.18*(1 - grow*0.7))[..., None]*np.array([0.9, 0.9, 0.92])*env
         # twin gamma-ray jets along the spin axis, shooting past the frame edges
         L = 90*grow + 2
         for sgn in (1, -1):
@@ -368,7 +369,7 @@ def effects(p, trans_img):
                 base = env*math.exp(-s_/90)*knots*0.07
                 wid = (0.3 + 0.025*s_)*pxs
                 splat(fx, x, y, max(wid*0.3, 1.0*SS), np.array([0.9, 0.95, 1.0])*base*2.2)
-                splat(fx, x, y, max(wid, 2.0*SS), np.array([0.62, 0.78, 1.0])*base*0.45)
+                splat(fx, x, y, max(wid, 2.0*SS), np.array([0.82, 0.86, 0.92])*base*0.45)
         # debris thrown out in every direction
         for dbr in DEBRIS:
             dist_ = (sh*1.3 + w*0.55*dbr['sp']*grow)
@@ -398,9 +399,14 @@ def frame(fi):
     esc = G['escaped']
     c = acc + G['stars']*trans[:, None]
     c = c + effects(p, trans.reshape(G['h'], G['w'])).reshape(-1, 3)
+    # neutral grade: keep the physics' brightness, drop most of the warm tint
+    lum = (c*np.array([0.2126, 0.7152, 0.0722])).sum(-1, keepdims=True)
+    c = lum + SAT*(c - lum)
     col = 1 - np.exp(-c*EXPOSURE) + np.where(esc[:, None], BG*trans[:, None], 0)
     img = np.clip(col, 0, 1).reshape(G['h'], G['w'], 3)
-    im = Image.fromarray((img*255 + np.random.default_rng(fi).uniform(-0.5, 0.5, img.shape)).clip(0, 255).astype(np.uint8))
+    rng_ = np.random.default_rng(fi)
+    dith = rng_.uniform(-0.5, 0.5, img.shape) + rng_.uniform(-0.5, 0.5, img.shape)
+    im = Image.fromarray((img*255 + dith).clip(0, 255).astype(np.uint8))
     if SS > 1: im = im.resize((W, Hh), Image.LANCZOS)
     im.save(os.path.join(OUT, f"f{fi:03d}.png"))
     return fi
@@ -411,8 +417,10 @@ def init(g):
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     import time; t0 = time.time()
-    g = trace(); print("traced", round(time.time() - t0, 1), "s", flush=True)
-    with Pool(os.cpu_count(), initializer=init, initargs=(g,)) as pool:
+    g = trace()
+    for k_ in ('r', 'th', 'corona', 'stars', 'lam'): g[k_] = g[k_].astype(np.float32)
+    print("traced", round(time.time() - t0, 1), "s", flush=True)
+    with Pool(int(os.environ.get('PROCS', os.cpu_count())), initializer=init, initargs=(g,)) as pool:
         ONLY = os.environ.get('ONLY')
         todo = [int(x) for x in ONLY.split(',')] if ONLY else range(FRAMES)
         for _ in pool.imap_unordered(frame, todo): pass
